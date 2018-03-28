@@ -25,7 +25,7 @@ html, body
 
 div.main
 {
-  margin-top: 60px;
+  margin-top: 50px;
   width: 100%;
   height: auto;
 }
@@ -42,5 +42,14 @@ div.black-overlay
 
 div.site-footer
 {
+  height: 100px;
+  background-color: #111;
+}
 
+div.footer-content
+{
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 40px;
 }

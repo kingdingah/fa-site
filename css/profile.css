@@ -3,7 +3,7 @@ div.profile-header
   width: 100%;
   height: 500px;
   background-image: url('../img/bg/header.png');
-  background-size: 105%;
+  background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,24 +21,6 @@ div.profile-nav img
   height: 100%;
   width: auto;
   border-radius: 5px;
-}
-
-div.profile-desc
-{
-  width: 100%;
-  height: 400px;
-  background-color: #333;
-}
-
-div.profile-desc div.row
-{
-  height: 100%;
-}
-
-div.desc-info
-{
-  background-color: #444;
-  height: 100%;
 }
 
 div.profile-icon
@@ -62,12 +44,13 @@ div.profile-name
   position: absolute;
   z-index: 5;
   margin-top: -95px;
-  margin-left: 250px;
+  margin-left: 275px;
 }
 
 span.fa-name
 {
   font-size: 40px;
+  font-weight: bold;
   padding-top: 10px;
   color: white;
 }
@@ -137,10 +120,16 @@ span.icon-info:hover, span.icon-edit:hover
   cursor: pointer;
 }
 
+span.banner-edit img
+{
+  width: 100%;
+  height: auto;
+}
+
 div.profile-items
 {
   position: absolute;
-  left: 250px;
+  left: 275px;
   height: 50px;
   width: auto;
 }
@@ -178,19 +167,44 @@ div.profile-content h2
   margin-left: 20px;
   color: white;
   height: 75px;
+  text-align: center;
   line-height: 75px;
 }
 
-div.profile-content .col-md-6
+div.profile-content .col-md-12
 {
   padding: 15px !important;
 }
 
-div.profile-content .col-md-6 div
+div.profile-content .col-md-12 div
 {
   background-color: #555;
   border-radius: 10px;
   margin-top: 20px !important;
+}
+
+div.main-avatar
+{
+  width: 100%;
+  height: 400px;
+}
+
+div.main-avatar img
+{
+  width: auto;
+  height: 100%;
+  display: block;
+  margin: 0 auto !important;
+}
+
+div.avatar-title
+{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2em;
+  color: white;
 }
 
 div.gallery-section
@@ -204,13 +218,146 @@ div.about-section
 
 div.fa-watchers,div.fa-watching
 {
-  height: 250px;
+  height: 200px;
+  margin: 25px 25px 0px 25px;
+  background-color: #444;
+}
+
+div.watcher-title
+{
+  height: 40px;
+  background-color: #222;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+}
+
+div.watcher-box
+{
+  height: 160px;
+  width: 100%;
+}
+
+div.watcher-name
+{
+  color: white;
+  text-align: center;
+  height: 40px;
+  font-size: 1em;
+  line-height: 40px;
+  -webkit-transition: 0.2s ease;
+  -webkit-transition-property: background-color, color;
+}
+
+div.watcher-name:hover
+{
+  cursor: pointer;
+  background-color: #555;
+  color: #faaf3a;
 }
 
 div.profile-portrait, div.friends-section
 {
   height: 200px;
 }
+
+/* Profile Description */
+
+div.desc-info
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px !important;
+    border-right: 1px solid #555;
+}
+
+div.upper-desc
+{
+  margin-top: 75px;
+}
+
+div.upper-desc, div.mid-desc, div.lower-desc
+{
+  width: calc(100% - 100px);
+  height: auto;
+  color: white;
+  border-radius: 15px;
+}
+
+div.profile-desc
+{
+  width: 100%;
+  height: auto;
+  background-color: #333;
+}
+
+div.profile-desc div.row
+{
+  height: 100%;
+}
+
+div.desc-info
+{
+  height: 100%;
+}
+
+div.desc-main
+{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+div.desc-social
+{
+  border-left: 1px solid #555;
+  height: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+div.social-item
+{
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 5px!important;
+  margin-bottom: 5px !important;
+  font-size: 1.1em;
+}
+
+div.social-item.col-md-4
+{
+  padding-left: 20px !important;
+}
+
+div.social-header
+{
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  height:70px;
+  line-height: 70px;
+}
+
+span.icon-social
+{
+  height: 50px;
+  width: auto;
+}
+
+span.icon-social img
+{
+  height: 50px;
+  width: auto;
+  padding: 8px 0px !important;
+  display: block;
+  margin: 0 auto !important;
+}
+
 /* Icon Infobox CSS*/
 
 div.icon-infobox
@@ -292,6 +439,22 @@ span.close-icon-info
   {
     width: 150px;
     height: 150px;
+  }
+
+  div.profile-name
+  {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 5;
+    margin: 0 auto;
+    margin-top: 65px;
+    text-align: center;
+  }
+
+  div.profile-items
+  {
+    display: none;
   }
 }
 
