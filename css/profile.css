@@ -1,0 +1,310 @@
+div.profile-header
+{
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/bg/header.png');
+  background-size: 105%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div.profile-nav
+{
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+}
+
+div.profile-nav img
+{
+  height: 100%;
+  width: auto;
+  border-radius: 5px;
+}
+
+div.profile-desc
+{
+  width: 100%;
+  height: 400px;
+  background-color: #333;
+}
+
+div.profile-desc div.row
+{
+  height: 100%;
+}
+
+div.desc-info
+{
+  background-color: #444;
+  height: 100%;
+}
+
+div.profile-icon
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #777;
+  position: absolute;
+  z-index: 5;
+  margin-top: -100px;
+  margin-left: 50px;
+  -webkit-transition: 0.25s ease;
+  -webkit-transition-property: margin-top;
+}
+
+div.profile-name
+{
+  width: auto;
+  height: 80px;
+  position: absolute;
+  z-index: 5;
+  margin-top: -95px;
+  margin-left: 250px;
+}
+
+span.fa-name
+{
+  font-size: 40px;
+  padding-top: 10px;
+  color: white;
+}
+
+span.fa-displayname
+{
+  font-size: 15px;
+  color: white;
+  opacity: 0.7;
+}
+
+span.icon-edit
+{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  border-radius: 10px;
+  display: none;
+  opacity: 0.4;
+}
+
+span.icon-edit img
+{
+  width: 100%;
+  height: auto;
+}
+
+span.banner-edit
+{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  border-radius: 10px;
+  opacity: 0.4;
+}
+
+span.banner-edit img
+{
+  width: 100%;
+  height: auto;
+}
+
+span.icon-info
+{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  border-radius: 10px;
+  display: none;
+  opacity: 0.4;
+}
+
+span.icon-info img
+{
+  width: 100%;
+  height: auto;
+}
+
+span.icon-info:hover, span.icon-edit:hover
+{
+  cursor: pointer;
+}
+
+div.profile-items
+{
+  position: absolute;
+  left: 250px;
+  height: 50px;
+  width: auto;
+}
+
+div.profile-items a
+{
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  float: left;
+  font-size: 1.1em;
+  color: white !important;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 25px !important;
+  -webkit-transition: 0.2s ease;
+  -webkit-transition-property: background-color;
+}
+div.profile-items a:hover
+{
+  background-color: #444;
+  cursor: pointer;
+}
+
+div.profile-content
+{
+  height: auto;
+  padding-bottom: 25px !important;
+  width: 100%;
+}
+
+div.profile-content h2
+{
+  font-size: 3.2em;
+  margin-left: 20px;
+  color: white;
+  height: 75px;
+  line-height: 75px;
+}
+
+div.profile-content .col-md-6
+{
+  padding: 15px !important;
+}
+
+div.profile-content .col-md-6 div
+{
+  background-color: #555;
+  border-radius: 10px;
+  margin-top: 20px !important;
+}
+
+div.gallery-section
+{
+  height: 400px;
+}
+div.about-section
+{
+  height: 450px;
+}
+
+div.fa-watchers,div.fa-watching
+{
+  height: 250px;
+}
+
+div.profile-portrait, div.friends-section
+{
+  height: 200px;
+}
+/* Icon Infobox CSS*/
+
+div.icon-infobox
+{
+  display: none;
+  width: 800px;
+  height: 540px;
+  position: fixed;
+  z-index: 910;
+  left: calc(50% - 400px);
+  top: calc(50% - 270px);
+  border-radius: 20px;
+  background-color: #222;
+}
+
+.row
+{
+  margin: 0 !important;
+}
+
+div.icon-details
+{
+  background-color: #666;
+  height: 540px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+div.icon-display
+{
+  height: 540px;
+}
+
+div.icon-large
+{
+  height: 400px;
+  width: 400px;
+  margin-top: 70px !important;
+  position: absolute;
+  left: calc(50% - 200px);
+  background-color: #888;
+  border-radius: 25px;
+
+}
+
+span.close-icon-info
+{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+/* MOBILE CONSTRAINTS */
+
+@media screen and (max-width: 1366px)
+{
+  div.profile-header
+  {
+    height: 290px;
+  }
+  div.profile-icon
+  {
+    width: 175px;
+    height: 175px;
+    margin-top: -90px;
+  }
+}
+
+@media screen and (max-width: 990px)
+{
+  div.profile-header
+  {
+    height: 300px;
+  }
+  div.profile-icon
+  {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  div.profile-header
+  {
+    height: 250px;
+  }
+  div.profile-icon
+  {
+    width: 150px;
+    height: 150px;
+    left: calc(50% - 125px);
+  }
+}

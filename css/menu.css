@@ -1,0 +1,68 @@
+div.main-menu
+{
+  width: 100%;
+  height: 60px;
+  margin-top: -60px;
+  background-color: #111;
+  position: fixed;
+  z-index: 100;
+}
+
+div.nav-logo
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 200px;
+  background-color: #222;
+  color: white;
+}
+
+div.nav-search
+{
+  position: absolute;
+  top: 0;
+  left: 310px;
+  height: 60px;
+  width: 300px;
+}
+
+span.search-icon
+{
+  position: absolute;
+  top: 0;
+  left: 250px;
+  height: 60px;
+  width: 60px;
+}
+
+span.search-icon img
+{
+  height: 40px;
+  width: auto;
+  margin: 10px;
+}
+
+div.nav-search input
+{
+  height: 60px;
+  font-size: 1.2em;
+  width: 0px;
+  background-color: #333;
+  outline: none;
+  border: none;
+  color: #eee;
+  padding-left: 10px !important;
+}
+
+div.sfw-toggle
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 100px;
+  background-color: green;
+  color: white;
+}
