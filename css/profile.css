@@ -619,7 +619,24 @@ span.close-icon-info
   {
     width: 10%;
   }
+}
 
+@media screen and (max-width: 1366px)
+{
+  div.profile-info a
+  {
+    padding: 0px 5px !important;
+  }
+
+  div.desc-info, div.desc-avatar, div.desc-social
+  {
+    width: 100%;
+  }
+
+  div.profile-info
+  {
+    margin-top: -42px;
+  }
 }
 
 @media screen and (max-width: 768px)
