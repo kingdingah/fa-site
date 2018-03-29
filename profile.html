@@ -16,6 +16,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="js/profile.js"></script>
+    <script src="js/menu.js"></script>
   </head>
   <body>
     <!-- Main Menu -->
@@ -24,6 +25,14 @@
         <span class="logo-box">
           <img src="img/svg/sitelogo.svg" />
         </span>
+      </div>
+      <div class="nav-upload">
+        <a id="upload">
+          Upload
+          <span class="upload-button">
+            <img src="img/svg/upload-button.svg" />
+          </span>
+        </a>
       </div>
       <!-- Optional Search Bar
       <span class="search-icon">
@@ -34,24 +43,39 @@
       </div>
       -->
       <div class="nav-settings">
-        <a>
+        <a id="subbox">
+          6S
+        </a>
+        <a id="profile">
           Profile
           <span class="nav-caret">
             <img src="img/svg/caret.svg" />
           </span>
         </a>
-        <a class="subbox">
-          6S
-        </a>
-        <a>
+        <a id="settings">
           Settings
           <span class="nav-caret">
             <img src="img/svg/caret.svg" />
           </span>
         </a>
       </div>
-      <div class="sfw-toggle">
-        SFW
+      <div class="nav-profile-dropdown">
+        <h4>Profile Info</h4>
+        <a>Notes</a>
+        <a>Journals</a>
+        <a>Commissions</a>
+        <a>Avatar</a>
+      </div>
+      <div class="nav-settings-dropdown">
+        <h4>Account</h4>
+        <a>Account Settings</a>
+        <a>Site Settings</a>
+        <a>Site Settings</a>
+        <h4>Profile</h4>
+        <a>Edit Profile Info</a>
+        <a>Edit Social Links</a>
+        <a>Avatar Management</a>
+        <a id="sfw-toggle">SFW Toggle</a>
       </div>
     </div>
 
@@ -106,6 +130,8 @@
           <a>Commissions</a>
         </div>
         <div class="profile-info">
+          <a>1460 Followers</a>
+          <a>36 Following</a>
           <a>176996 Views</a>
           <a>146 Subs</a>
           <a>10552 Favs</a>
@@ -188,7 +214,10 @@
               </div>
             </div>
             <div class="fa-watchers">
-              <div class="watcher-title">Recent Watchers</div>
+              <div class="watcher-title-box">
+                <a class="watcher-title">Recent Watchers</a>
+                <a class="watcher-count">1460</a>
+              </div>
               <div class="watcher-box container">
                 <div class="row">
                   <div class="watcher-name col-sm-4">username</div>
@@ -204,7 +233,10 @@
               </div>
             </div>
             <div class="fa-watching">
-              <div class="watcher-title">Recent Watching</div>
+              <div class="watcher-title-box">
+                <a class="watcher-title">Recent Watching</a>
+                <a class="watcher-count">38</a>
+              </div>
               <div class="watcher-box container">
                 <div class="row">
                   <div class="watcher-name col-sm-4">username</div>
@@ -224,9 +256,20 @@
       </div>
       <div class="profile-content container">
         <div class="row">
-          <div class="col-md-12">
-            <h2>Gallery</h2>
-            <div class="gallery-section"></div>
+          <div class="gallery-title col-md-12">Gallery</div>
+          <div class="gallery-featured col-md-4 container">
+            <div class="row">
+              <div class="col-md-11">
+
+              </div>
+            </div>
+          </div>
+          <div class="gallery-recent col-md-8">
+            <div class="row">
+              <div class="col-md-11">
+
+              </div>
+            </div>
           </div>
           <div class="col-md-12">
             <h2>Shouts</h2>

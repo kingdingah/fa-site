@@ -34,7 +34,7 @@ span.logo-box img
 div.nav-settings, div.nav-profile
 {
   position: absolute;
-  right: 100px;
+  right: 25px;
   text-align: center;
   font-size: 0.9em;
   height: 50px;
@@ -42,7 +42,94 @@ div.nav-settings, div.nav-profile
   color: white;
 }
 
-a.subbox
+#profile, #upload, #settings
+{
+  -webkit-transition: 0.1s ease;
+  -webkit-transition-property: background-color;
+}
+
+#upload:hover
+{
+  background-color: #faaf3a;
+  cursor: pointer;
+}
+
+#profile:hover, #settings:hover, #subbox:hover
+{
+  background-color: #444;
+  cursor: pointer;
+}
+
+div.nav-upload
+{
+  position: absolute;
+  left: 285px;
+  text-align: center;
+  font-size: 0.9em;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+}
+
+div.nav-settings-dropdown
+{
+  width: 180px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  background-color: #111;
+  display: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+div.nav-profile-dropdown
+{
+  width: 180px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  right: 135px;
+  background-color: #111;
+  display: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+div.nav-settings-dropdown h4, div.nav-profile-dropdown h4
+{
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  border-bottom: 1px solid #faaf3a;
+  color: white;
+  width: calc(100% - 20px);
+  font-size: 1em;
+  marg-left: 10px;
+  text-align: center;
+}
+
+div.nav-settings-dropdown a, div.nav-profile-dropdown a
+{
+  height: 35px;
+  line-height: 35px;
+  color: white !important;
+  width: 180px;
+  font-size: 0.8em;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  display: block;
+  -webkit-transition: 0.2s ease;
+  -webkit-transition-property: background-color, color;
+}
+
+div.nav-settings-dropdown a:hover, div.nav-profile-dropdown a:hover
+{
+  background-color: #333;
+  color: #faaf3a !important;
+  cursor: pointer;
+}
+
+#subbox
 {
   font-weight: 700;
 }
@@ -52,7 +139,7 @@ div.nav-profile
   right: 00px;
 }
 
-div.nav-settings a, div.nav-profile a
+div.nav-settings a, div.nav-profile a, div.nav-upload a
 {
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -60,10 +147,15 @@ div.nav-settings a, div.nav-profile a
   float: left;
 }
 
-div.nav-settings a:hover, div.nav-profile a:hover
+div.nav-settings a:hover, div.nav-profile a:hover,
 {
   cursor: pointer;
   background-color: #444;
+}
+
+div.nav-upload a:hover
+{
+  background-color: #faaf3a;
 }
 
 span.nav-caret
@@ -78,6 +170,17 @@ span.nav-caret img
   width: auto;
 }
 
+span.upload-button
+{
+  height: 100%;
+}
+
+span.upload-button img
+{
+  height: 15px;
+  margin-left: 5px;
+  width: auto;
+}
 
 div.nav-search
 {
@@ -116,15 +219,39 @@ div.nav-search input
   padding-left: 10px !important;
 }
 
-div.sfw-toggle
+#sfw-toggle
 {
-  position: absolute;
-  top: 0;
-  right: 0;
   height: 50px;
   line-height: 50px;
-  text-align: center;
-  width: 100px;
   background-color: #23a02f;
   color: white;
+  -webkit-transition: 0.2s ease;
+  -webkit-transition-property: background-color, color;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#sfw-toggle:hover
+{
+  color: white !important;
+  background-color: #2ab737;
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 1200px)
+{
+
+}
+
+@media screen and (max-width: 990px)
+{
+
+}
+
+@media screen and (max-width: 768px)
+{
+  div.nav-upload
+  {
+    display: none;
+  }
 }

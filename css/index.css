@@ -18,7 +18,7 @@ html, body
 @font-face
 {
     font-family: raleway;
-    src: url('../fonts/raleway/Raleway-Light.ttf');
+    src: url('../fonts/opensans/OpenSans-Light.ttf');
 }
 
 /* Main Styles */
