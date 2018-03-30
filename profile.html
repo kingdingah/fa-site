@@ -15,6 +15,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="js/index.js"></script>
     <script src="js/profile.js"></script>
     <script src="js/menu.js"></script>
   </head>
@@ -43,9 +44,7 @@
       </div>
       -->
       <div class="nav-settings">
-        <a id="subbox">
-          6S
-        </a>
+        <a id="subbox"></a>
         <a id="profile">
           Profile
           <span class="nav-caret">
@@ -59,12 +58,69 @@
           </span>
         </a>
       </div>
+      <div class="nav-subbox">
+        <h4>Notes</h4>
+        <p class="nothingnew">No New Notes</p>
+        <a class="notes">hi :)<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="notes">Sketch Update<br/>
+          <span class="sentwhen">6hr ago</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <h4>Journals</h4>
+        <p class="nothingnew">No New Journals</p>
+        <a class="journals">Stream Announcement<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Patreon Update<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Raffle!<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="journals">Etc etc..<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <h4>Submissions</h4>
+        <p class="nothingnew">No New Subs</p>
+        <!-- SUBS -->
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub1.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub2.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub3.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+        <!-- /SUBS  -->
+        <a id="clear">Clear</a>
+        <a id="seeall">View All</a>
+      </div>
       <div class="nav-profile-dropdown">
         <h4>Profile Info</h4>
         <a>Notes</a>
         <a>Journals</a>
         <a>Commissions</a>
         <a>Avatar</a>
+        <a id="logout">Log Out</a>
       </div>
       <div class="nav-settings-dropdown">
         <h4>Account</h4>
@@ -77,6 +133,13 @@
         <a>Avatar Management</a>
         <a id="sfw-toggle">SFW Toggle</a>
       </div>
+    </div>
+
+    <!-- Quick Upload Section -->
+    <div class="quick-upload">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
     </div>
 
     <!-- Fade to Black -->

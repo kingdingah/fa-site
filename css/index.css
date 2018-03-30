@@ -23,6 +23,29 @@ html, body
 
 /* Main Styles */
 
+/* ScrollWheel Styles */
+
+div.nav-subbox::-webkit-scrollbar
+{
+  display: none;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
 div.main
 {
   margin-top: 50px;
@@ -52,4 +75,17 @@ div.footer-content
   font-size: 1em;
   text-align: center;
   margin-top: 40px;
+}
+
+/* Quick Upload */
+
+div.quick-upload
+{
+  height: 100%;
+  width: 400px;
+  background-color: #333;
+  position: fixed;
+  left: -400px;
+  top: 0;
+  z-index: 999;
 }

@@ -95,7 +95,58 @@ div.nav-profile-dropdown
   border-radius: 0px 0px 10px 10px;
 }
 
-div.nav-settings-dropdown h4, div.nav-profile-dropdown h4
+div.nav-subbox
+{
+  width: 270px;
+  height: 350px;
+  padding-bottom: 30px !important;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50px;
+  right: 145px;
+  background-color: #111;
+  display: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+span.bywho, span.sentwhen
+{
+  position: absolute;
+  text-align: center;
+  right: auto;
+  width: calc(100% - 50px);
+  color: white;
+  margin-top: -30px;
+  font-size: 0.9em;
+  color: #ccc;
+  border-bottom: 1px solid #888;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 10px !important;
+}
+
+a.notes span.bywho, a.journals span.bywho, span.sentwhen
+{
+  color: #555;
+  position: absolute;
+  right: 20px;
+  width: auto;
+  text-align: left;
+  display: block;
+  border-bottom: none;
+  margin-top: -18px;
+  margin-left: 2px;
+  margin-right: 0px;
+}
+
+
+span.sentwhen
+{
+  left: 20px;
+}
+
+div.nav-settings-dropdown h4, div.nav-profile-dropdown h4,
+div.nav-subbox h4
 {
   height: 40px;
   line-height: 40px;
@@ -108,13 +159,14 @@ div.nav-settings-dropdown h4, div.nav-profile-dropdown h4
   text-align: center;
 }
 
-div.nav-settings-dropdown a, div.nav-profile-dropdown a
+div.nav-settings-dropdown a, div.nav-profile-dropdown a,
+div.nav-subbox a
 {
   height: 35px;
-  line-height: 35px;
+  line-height: 32px;
   color: white !important;
   width: 180px;
-  font-size: 0.8em;
+  font-size: 0.85em;
   padding-left: 10px !important;
   padding-right: 10px !important;
   display: block;
@@ -122,11 +174,119 @@ div.nav-settings-dropdown a, div.nav-profile-dropdown a
   -webkit-transition-property: background-color, color;
 }
 
-div.nav-settings-dropdown a:hover, div.nav-profile-dropdown a:hover
+div.nav-subbox a
+{
+  width: 245px;
+}
+
+
+div.nav-subbox a.journals, div.nav-subbox a.notes
+{
+    height: 40px;
+}
+
+div.nav-subbox #clear
+{
+  width: 135px;
+  float: left;
+  position: fixed;
+  top: 365px;
+  text-align: center;
+  background-color: #e03a3a;
+  border-radius: 0px 0px 0px 10px;
+  z-index: 6;
+  line-height: 35px;
+}
+
+div.nav-subbox #seeall
+{
+  width: 135px;
+  float: left;
+  position: fixed;
+  top: 365px;
+  text-align: center;
+  background-color: #e03a3a;
+  right: 145px;
+  border-radius: 0px 0px 10px 0px;
+  z-index: 6;
+  line-height: 35px;
+}
+
+p.nothingnew
+{
+  width: calc(100% - 50px);
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  font-size: 0.8em;
+  display: none;
+  text-align: center;
+}
+
+div.nav-subbox #clear:hover, div.nav-subbox #seeall:hover
+{
+  background-color: #c92c2c;
+  color: white !important;
+}
+
+div.nav-settings-dropdown a:hover, div.nav-profile-dropdown a:hover,
+div.nav-subbox a:hover
 {
   background-color: #333;
   color: #faaf3a !important;
   cursor: pointer;
+}
+
+div.nav-subbox h6
+{
+    text-align: center;
+    width: 240px;
+    display: block;
+    margin: 15px;
+    line-height: 10px;
+    height: 30px;
+    font-size: 0.9em;
+    color: white;
+}
+
+div.nav-subbox img
+{
+  width: auto;
+  display:block;
+  margin:auto;
+  height: 200px;
+  padding-top: 10px !important;
+}
+
+span.submission
+{
+  height: 220px;
+  width: 100%;
+  -webkit-transition: 0.2s;
+}
+
+span.submission .sub-overlay
+{
+  position: absolute;
+  z-index: 5;
+  height: 200px;
+  width: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #faaf3a;
+  line-height: 200px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+span.submission .sub-overlay
+{
+  cursor: pointer;
+}
+
+span.submission:hover .sub-overlay
+{
+  display: block;
 }
 
 #subbox
@@ -221,8 +381,8 @@ div.nav-search input
 
 #sfw-toggle
 {
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   background-color: #23a02f;
   color: white;
   -webkit-transition: 0.2s ease;
@@ -234,6 +394,24 @@ div.nav-search input
 {
   color: white !important;
   background-color: #2ab737;
+}
+
+#logout
+{
+  border-top: 1px solid #faaf3a;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgba(250, 175, 58, 0.1);
+  color: white;
+  -webkit-transition: 0.2s ease;
+  -webkit-transition-property: background-color, color;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#logout:hover
+{
+  color: white !important;
+  background-color: rgba(250, 175, 58, 0.2);
 }
 
 /* Mobile Responsiveness */
