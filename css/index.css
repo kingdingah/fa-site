@@ -9,7 +9,7 @@ html, body
 {
   margin: 0 auto;
   padding: 0 !important;
-  font-family: raleway;
+  font-family: opensans;
   max-width: 100% !important;
 }
 
@@ -17,8 +17,14 @@ html, body
 
 @font-face
 {
-    font-family: raleway;
+    font-family: opensans;
     src: url('../fonts/opensans/OpenSans-Light.ttf');
+}
+
+@font-face
+{
+    font-family: opensans-b;
+    src: url('../fonts/opensans/OpenSans-SemiBold.ttf');
 }
 
 /* Main Styles */
@@ -96,7 +102,7 @@ div.new-note
   background-color: #111;
   border-radius: 10px;
   position: fixed;
-  z-index: 999;
+  z-index: 1100;
   bottom: -100px;
   right: 25px;
   border-bottom: 3px solid #faaf3a;
@@ -110,6 +116,11 @@ div.new-note span.close-icon-info
   top: 0px;
   left: 0px;
   margin: 15px 0px 0px 15px;
+}
+
+div.new-note span.close-icon-info:hover
+{
+  cursor: pointer;
 }
 
 div.new-note span.close-icon-info img

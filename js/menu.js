@@ -140,10 +140,55 @@ $(document).ready(function()
 
     $("span.burger-box").click(function() {
       $("div.mobile-menu").fadeIn(300);
+      $(this).fadeOut(300);
+      $("div.nav-logo-mobile").fadeIn(200);
     });
 
     $("div.mobile-menu .close-icon-info").click(function() {
       $("div.mobile-menu").fadeOut(300);
+      $("span.burger-box").fadeIn(300);
+    });
+
+    var openprofile = true;
+    var opensite = true;
+
+    $("#profile-mobile-title").click(function() {
+      $("#profile-mobile").slideToggle(200);
+
+      if(openprofile)
+      {
+        $(this).css({
+          'border-bottom':'2px solid #faaf3a'
+        });
+        openprofile = false;
+      }
+      else
+      {
+        $(this).css({
+          'border-bottom':'none'
+        });
+        openprofile = true;
+      }
+    });
+
+    $("div.notifications-mobile").html(notes.length+"N / "+journals.length+"J / "+images.length+"S");
+
+    $("#site-mobile-title").click(function() {
+      $("#site-mobile").slideToggle(200);
+      if(opensite)
+      {
+        $(this).css({
+          'border-bottom':'2px solid #faaf3a'
+        });
+        opensite = false;
+      }
+      else
+      {
+        $(this).css({
+          'border-bottom':'none'
+        });
+        opensite = true;
+      }
     });
 
     $(window).scroll(function() {

@@ -47,6 +47,12 @@ $(document).ready(function() {
     $("div.new-notes").hide();
   }
 
+  setTimeout(function(){
+    $("div.new-note").fadeOut(600);
+    $("div.notes-container").fadeOut(600);
+  }, 5000);
+
+
   $("div.notes-container .close-icon-info").click(function() {
     $("div.new-note").fadeOut(200);
     $("div.notes-container").fadeOut(200);

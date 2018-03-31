@@ -50,9 +50,9 @@ div.profile-name
 span.fa-name
 {
   font-size: 40px;
-  font-weight: bold;
   padding-top: 10px;
   color: white;
+  font-family: opensans-b;
 }
 
 span.fa-displayname
@@ -411,6 +411,13 @@ div.social-item
   color: white;
   margin: 0 !important;
   font-size: 1.1em;
+  -webkit-transition: 0.2s ease;
+  -webkit-transition-property: background-color;
+}
+
+div.social-item:hover
+{
+  background-color: #faaf3a;
 }
 
 div.social-header
@@ -777,6 +784,6 @@ div.icon-large img
   }
   div.upper-desc
   {
-    margin-top: 75px;
+    margin-top: 85px;
   }
 }
