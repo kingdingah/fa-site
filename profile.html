@@ -15,16 +15,28 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="js/index.js"></script>
     <script src="js/profile.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+    </div>
+
     <!-- Main Menu -->
     <div class="main-menu">
       <div class="nav-logo">
         <span class="logo-box">
           <img src="img/svg/sitelogo.svg" />
+        </span>
+      </div>
+      <div class="mobile-button">
+        <span class="burger-box">
+          <img src="img/svg/burger.svg" />
         </span>
       </div>
       <div class="nav-upload">
@@ -142,6 +154,11 @@
       </span>
     </div>
 
+    <!-- Notes Notifications -->
+    <div class="notes-container">
+
+    </div>
+
     <!-- Fade to Black -->
     <div class="black-overlay"></div>
 
@@ -182,8 +199,7 @@
           <span class="fa-name">~kingdingah</span>
           <br />
           <span class="fa-displayname">King of the Dingos</span>
-           /
-          <span class="fa-displayname">Joined: August 7th 1996</span>
+          <span class="fa-joindate">Joined: August 7th 1996</span>
         </div>
         <div class="profile-items">
           <a>Profile</a>
@@ -230,49 +246,45 @@
                   Social Links
                 </div>
                 <!-- social item -->
-                <div class="social-item col-md-2">
+                <div class="social-item col-md-6">
                   <span class="icon-social">
                     <img src="img/svg/twitter.svg" />
                   </span>
-                </div>
-                <div class="social-item col-md-4">
-                  kingdingah
-                </div>
-                <!-- social item -->
-                <div class="social-item col-md-2">
-                  <span class="icon-social">
-                    <img src="img/svg/telegram.svg" />
+                  <span class="social-user">
+                    kingdingah
                   </span>
                 </div>
-                <div class="social-item col-md-4">
-                  dingah
-                </div>
-                <!-- social item -->
-                <div class="social-item col-md-2">
+                <div class="social-item col-md-6">
                   <span class="icon-social">
                     <img src="img/svg/tumblr.svg" />
                   </span>
-                </div>
-                <div class="social-item col-md-4">
-                  kingdingah
-                </div>
-                <!-- social item -->
-                <div class="social-item col-md-2">
-                  <span class="icon-social">
-                    <img src="img/svg/facebook.svg" />
+                  <span class="social-user">
+                    kingdingah
                   </span>
                 </div>
-                <div class="social-item col-md-4">
-                  none
+                <div class="social-item col-md-6">
+                  <span class="icon-social">
+                    <img src="img/svg/telegram.svg" />
+                  </span>
+                  <span class="social-user">
+                    dingah
+                  </span>
                 </div>
-                <!-- social item -->
-                <div class="social-item col-md-2">
+                <div class="social-item col-md-6">
                   <span class="icon-social">
                     <img src="img/svg/steam.svg" />
                   </span>
+                  <span class="social-user">
+                    dingah
+                  </span>
                 </div>
-                <div class="social-item col-md-4">
-                  dingah
+                <div class="social-item col-md-6">
+                  <span class="icon-social">
+                    <img src="img/svg/facebook.svg" />
+                  </span>
+                  <span class="social-user">
+                    none
+                  </span>
                 </div>
               </div>
             </div>

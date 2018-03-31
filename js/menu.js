@@ -138,28 +138,22 @@ $(document).ready(function()
       }
     });
 
+    $("span.burger-box").click(function() {
+      $("div.mobile-menu").fadeIn(300);
+    });
+
+    $("div.mobile-menu .close-icon-info").click(function() {
+      $("div.mobile-menu").fadeOut(300);
+    });
+
     $(window).scroll(function() {
       if($(window).scrollTop() > 290)
       {
-        $(".profile-nav").animate({
-          position:'fixed',
-          top:'50px',
-        }, 300);
-
-        $(".profile-nav").css({
-          'z-index': '900'
-        });
+          /* */
       }
       else
       {
-        $(".profile-nav").animate({
-          position:'relative',
-          top:'0',
-        }, 300);
-
-        $(".profile-nav").css({
-          'z-index': '0'
-        });
+        /* */
       }
     });
 

@@ -104,6 +104,7 @@ div.nav-subbox
   position: absolute;
   top: 50px;
   right: 145px;
+  z-index: 999;
   background-color: #111;
   display: none;
   border-radius: 0px 0px 10px 10px;
@@ -416,20 +417,79 @@ div.nav-search input
 
 /* Mobile Responsiveness */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 990px)
 {
+  span.logo-box
+  {
+    width: 100%;
+  }
 
+  div.mobile-button
+  {
+    display: block;
+  }
+
+  div.nav-logo
+  {
+    display: block;
+    width: 100%;
+    left: auto;
+  }
+  span.logo-box img
+  {
+    width: 100%;
+  }
+
+  div.nav-upload
+  {
+    display: none;
+  }
+}
+
+/*  MOBILE MENU */
+
+div.mobile-button
+{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+span.burger-box
+{
+   display: none;
+}
+
+span.burger-box img
+{
+  height: auto;
+  width: 30px;
+}
+
+div.mobile-menu
+{
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 990px)
 {
-
-}
-
-@media screen and (max-width: 768px)
-{
-  div.nav-upload
+  span.burger-box
   {
-    display: none;
+     display: block;
+  }
+
+  div.mobile-menu span.close-icon-info
+  {
+    top: 10px;
   }
 }

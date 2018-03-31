@@ -62,6 +62,15 @@ span.fa-displayname
   opacity: 0.7;
 }
 
+span.fa-joindate
+{
+  font-size: 15px;
+  margin-left: 10px;
+  color: white;
+  opacity: 0.7;
+}
+
+
 span.icon-edit
 {
   height: 25px;
@@ -192,6 +201,11 @@ div.main-avatar img
   margin: 0 auto !important;
 }
 
+div.watcher-box
+{
+  border-top: 3px solid #faaf3a;
+}
+
 div.avatar-title
 {
   width: 100%;
@@ -222,8 +236,8 @@ div.gallery-featured .col-md-11, div.gallery-recent .col-md-11
 {
   height: 500px;
   background-color: #888;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 div.about-section
@@ -272,7 +286,7 @@ a.watcher-count
   right: 25px;
   width: 25%;
   display: block;
-  border-left: 1px solid #555;
+  border-left: 1px solid #333;
 }
 
 div.watcher-box
@@ -396,7 +410,6 @@ div.social-item
   line-height: 50px;
   color: white;
   margin: 0 !important;
-  width: 35%;
   font-size: 1.1em;
 }
 
@@ -412,17 +425,25 @@ div.social-header
 span.icon-social
 {
   height: 50px;
-  width: 15%;
+  width: 50px;
+  display: block;
+    float: left;
 }
 
 span.icon-social img
 {
   height: 50px;
-  width: auto;
+  width: 50px;
   vertical-align:  middle;
   padding: 8px 0px 8px 0px !important;
   display: block;
   margin: 0 !important;
+}
+span.social-user
+{
+  height: 50px;
+  width: 50px;
+  display: block;
 }
 
 /* Icon Infobox CSS*/
@@ -474,17 +495,6 @@ div.icon-large img
   height: 100%;
 }
 
-span.close-icon-info
-{
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  z-index: 999;
-  border-radius: 10px;
-}
-
 /* MOBILE CONSTRAINTS */
 
 @media screen and (max-width: 1366px)
@@ -509,10 +519,24 @@ span.close-icon-info
   {
     left: 250px;
   }
+}
 
-  div.upper-desc
+@media screen and (max-width: 1200px)
+{
+  div.desc-info, div.desc-social
   {
-    margin-top: 40px;
+    border: none;
+  }
+
+  div.profile-desc
+  {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  div.desc-info
+  {
+    border-bottom: 1px solid #faaf3a;
   }
 }
 
@@ -526,6 +550,43 @@ span.close-icon-info
   {
     width: 150px;
     height: 150px;
+  }
+
+  div.gallery-featured, div.gallery-recent
+  {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    background-color: #222;
+  }
+
+  div.gallery-featured .col-md-11, div.gallery-recent .col-md-11
+  {
+    margin-top: 0px;
+  }
+
+  div.gallery-title
+  {
+    line-height: 65px;
+  }
+
+  span.fa-displayname
+  {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  div.gallery-recent .col-md-11
+  {
+    margin-top: 0;
+  }
+
+  span.fa-joindate
+  {
+    margin-left: 0px;
+    width: 100%;
+    display: block;
+    text-align: center;
   }
 
   div.profile-name
@@ -544,20 +605,19 @@ span.close-icon-info
     display: none;
   }
 
+  span.social-user
+  {
+    width: 100px;
+  }
+
   div.sfw-toggle, div.nav-settings, div.nav-profile
   {
     display: none;
   }
 
-  div.nav-logo
-  {
-    width: calc(100% - 150px);
-    left: 75px;
-  }
-
   div.upper-desc
   {
-    width: calc(100% - 80px);
+    width: 100%;
     padding-top: 25px !important;
     padding-bottom: 15px !important;
     border-bottom: 1px solid #555;
@@ -565,9 +625,20 @@ span.close-icon-info
 
   div.mid-desc, div.lower-desc
   {
-    width: calc(100% - 80px);
+    width: 100%;
     margin-top: 15px !important;
     padding-bottom: 15px !important;
+  }
+
+  span.logo-box img
+  {
+    width: calc(100% - 150px);
+    margin-left: 75px;
+  }
+
+  a.watcher-count
+  {
+    right: 0;
   }
 
   div.upper-desc, div.mid-desc
@@ -579,15 +650,26 @@ span.close-icon-info
   {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    background-color: #222;
     padding-bottom: 30px !important;
+    border-bottom: 1px solid #faaf3a;
   }
 
   div.avatar-title
   {
-    height: 80px;
+    height: 50px;
     font-size: 1.8em;
-    line-height: 80px;
+    line-height: 30px;
+  }
+
+  div.desc-social
+  {
+    margin-bottom: 35px;
+  }
+
+  div.fa-watchers, div.fa-watching
+  {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   div.main-avatar
@@ -607,17 +689,55 @@ span.close-icon-info
 
   div.profile-social
   {
-    width: calc(100% - 50px);
+    width: 100%;
   }
 
-  div.social-item.col-md-4
+  div.social-item.col-md-6
   {
-    width: 40%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px)
+{
+  span.social-user
+  {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 320px)
+{
+  span.fa-name
+  {
+    font-size: 30px;
   }
 
-  div.social-item.col-md-2
+  div.avatar-title, div.social-header
   {
-    width: 10%;
+    font-size: 1.6em;
+  }
+
+  div.gallery-title
+  {
+    height: 50px;
+    font-size: 2em;
+    line-height: 50px;
+  }
+
+  div.desc-social
+  {
+    margin-top: 0px;
+  }
+
+  span.social-user, div.watcher-name
+  {
+    font-size: 0.7em;
+  }
+
+  div.upper-desc, div.mid-desc, div.lower-desc
+  {
+    font-size: 0.8em;
   }
 }
 
@@ -639,18 +759,21 @@ span.close-icon-info
   }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 990px)
 {
-  div.profile-header
-  {
-    height: 150px;
-  }
-
   div.profile-icon
   {
     width: 150px;
     height: 150px;
     left: calc(50% - 125px);
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  div.profile-header
+  {
+    height: 150px;
   }
   div.upper-desc
   {
