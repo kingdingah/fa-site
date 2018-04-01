@@ -13,24 +13,82 @@ $(document).ready(function()
       });
     });
 
-    $(window).scroll(function() {
+    $(window).scroll(function()
+    {
 
-      if($(window).scrollTop() >= 500)
+      if($(window).width() > 1366)
       {
-        $("div.profile-nav").css({
-          'position':'fixed',
-          'top': '50px'
-        });
+        if($(window).scrollTop() >= 500)
+        {
+          $("div.profile-nav").css({
+            'position':'fixed',
+            'top': '50px'
+          });
 
-        $("#mobile-border").css({
-          'display':'block'
-        });
+          $("#mobile-border").css({
+            'display':'block'
+          });
 
-        $("div.profile-icon").css({
-          'margin-top': '-250px'
-        });
+          $("div.profile-icon").css({
+            'margin-top': '-250px'
+          });
 
-        $("div.profile-name-small").fadeIn(200);
+          $("div.profile-name-small").fadeIn(200);
+        }
+        else
+        {
+          $("div.profile-nav").css({
+            'position':'relative',
+            'top':'auto'
+          });
+
+          $("#mobile-border").css({
+            'display':'none'
+          });
+
+          $("div.profile-icon").css({
+            'margin-top': '-100px'
+          });
+
+          $("div.profile-name-small").fadeOut(200);
+        }
+      }
+      else if($(window).width() > 990 && $(window).width() <= 1366)
+      {
+        if($(window).scrollTop() >= 290)
+        {
+          $("div.profile-nav").css({
+            'position':'fixed',
+            'top': '50px'
+          });
+
+          $("#mobile-border").css({
+            'display':'block'
+          });
+
+          $("div.profile-icon").css({
+            'margin-top': '-250px'
+          });
+
+          $("div.profile-name-small").fadeIn(200);
+        }
+        else
+        {
+          $("div.profile-nav").css({
+            'position':'relative',
+            'top':'auto'
+          });
+
+          $("#mobile-border").css({
+            'display':'none'
+          });
+
+          $("div.profile-icon").css({
+            'margin-top': '-100px'
+          });
+
+          $("div.profile-name-small").fadeOut(200);
+        }
       }
       else
       {
