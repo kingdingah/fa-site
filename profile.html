@@ -15,6 +15,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="js/parallax.min.js"></script>
     <script src="js/profile.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/index.js"></script>
@@ -36,7 +37,7 @@
       </div>
       <div id="mobile-username">~username</div>
       <div class="notifications-mobile">
-        
+
       </div>
       <div class="profile-hotbar">
         <a>Profile</a>
@@ -213,7 +214,8 @@
 
     <!-- Body -->
     <div class="main container">
-      <div class="profile-header">
+      <div class="profile-header parallax-window" data-position-y="" data-parallax="scroll" data-image-src="img/bg/bg.jpg">
+        <div class="banner-overlay"></div>
         <span class="banner-edit">
           <img src="img/svg/edit.svg" />
         </span>
@@ -235,6 +237,10 @@
           <span class="fa-displayname">King of the Dingos</span>
           <span class="fa-joindate">Joined: August 7th 1996</span>
         </div>
+        <div class="profile-name-small">
+          <img src="img/logo/dingo.png"/>
+          <span class="fa-name-small">~kingdingah</span>
+        </div>
         <div class="profile-items">
           <a>Profile</a>
           <a>Gallery</a>
@@ -250,6 +256,7 @@
           <a>10552 Favs</a>
         </div>
       </div>
+      <div id="mobile-border"></div>
       <div class="profile-desc container">
         <div class="row">
           <div class="col-md-12 col-lg-12 col-xl-4 desc-info">
@@ -329,15 +336,18 @@
               </div>
               <div class="watcher-box container">
                 <div class="row">
-                  <div class="watcher-name col-sm-4">username</div>
-                  <div class="watcher-name col-sm-4">name</div>
-                  <div class="watcher-name col-sm-4">ofuser</div>
-                  <div class="watcher-name col-sm-4">goeshere</div>
-                  <div class="watcher-name col-sm-4">yeahdude</div>
-                  <div class="watcher-name col-sm-4">youfeelme</div>
-                  <div class="watcher-name col-sm-4">username</div>
-                  <div class="watcher-name col-sm-4">name</div>
-                  <div class="watcher-name col-sm-4">ofuser</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">goeshere</div>
+                  <div class="watcher-name col-sm-3">yeahdude</div>
+                  <div class="watcher-name col-sm-3">youfeelme</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
                 </div>
               </div>
             </div>
@@ -348,15 +358,18 @@
               </div>
               <div class="watcher-box container">
                 <div class="row">
-                  <div class="watcher-name col-sm-4">username</div>
-                  <div class="watcher-name col-sm-4">name</div>
-                  <div class="watcher-name col-sm-4">ofuser</div>
-                  <div class="watcher-name col-sm-4">goeshere</div>
-                  <div class="watcher-name col-sm-4">yeahdude</div>
-                  <div class="watcher-name col-sm-4">youfeelme</div>
-                  <div class="watcher-name col-sm-4">username</div>
-                  <div class="watcher-name col-sm-4">name</div>
-                  <div class="watcher-name col-sm-4">ofuser</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">goeshere</div>
+                  <div class="watcher-name col-sm-3">yeahdude</div>
+                  <div class="watcher-name col-sm-3">youfeelme</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
                 </div>
               </div>
             </div>
@@ -380,9 +393,13 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12">
-            <h2>Shouts</h2>
-            <div class="gallery-section"></div>
+          <div class="gallery-title col-md-12">Shouts</div>
+          <div class="gallery-featured col-md-12 container">
+            <div class="row">
+              <div class="col-md-11">
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -397,4 +414,7 @@
       </div>
     </div>
   </body>
+  <script>
+      $("html,body").animate({scrollTop: 0}, 100);
+  </script>
 </html>

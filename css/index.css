@@ -1,6 +1,5 @@
 html, body
 {
-  background-color: #222;
   min-height: 100%;
   height: 100%;
 }
@@ -99,13 +98,17 @@ div.new-note
 {
   width: 350px;
   height: 60px;
-  background-color: #111;
+  background-color: #23a02f;
   border-radius: 10px;
   position: fixed;
   z-index: 1100;
   bottom: -100px;
-  right: 25px;
-  border-bottom: 3px solid #faaf3a;
+  right: 25px
+}
+
+span.close-icon-info:hover
+{
+  cursor: pointer;
 }
 
 div.new-note span.close-icon-info
@@ -161,4 +164,20 @@ div.quick-upload
   left: -400px;
   top: 0;
   z-index: 999;
+}
+
+@media screen and (max-width: 990px)
+{
+  div.site-footer
+  {
+    height: 40px;
+    background-color: #111;
+  }
+
+  div.footer-content
+  {
+    margin-top: 0;
+    line-height: 40px;
+    font-size: 0.8em;
+  }
 }

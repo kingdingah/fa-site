@@ -2,11 +2,21 @@ div.profile-header
 {
   width: 100%;
   height: 500px;
-  background-image: url('../img/bg/header.png');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+
+div.banner-overlay
+{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(209, 141, 35);
+  opacity: 0.1;
+}
+
+div.parallax-mirror img
+{
+  width: 1000px;
 }
 
 div.profile-nav
@@ -14,6 +24,8 @@ div.profile-nav
   width: 100%;
   height: 50px;
   background-color: #222;
+  position: relative;
+  z-index: 10;
 }
 
 div.profile-nav img
@@ -23,6 +35,44 @@ div.profile-nav img
   border-radius: 5px;
 }
 
+div.profile-name-small
+{
+  width: 200px;
+  margin-left: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 11;
+  display: none;
+}
+
+div.profile-name-small img
+{
+  height:50px;
+  width: auto;
+  border-radius: 0px;
+  margin-top: -4px;
+}
+
+span.fa-name-small
+{
+  font-size: 1em;
+  line-height: 50px;
+  color: white;
+  font-family: opensans-b;
+  padding-left: 15px !important;
+}
+
+#mobile-border
+{
+    height: 3px;
+    width: 100%;
+    background-color: #faaf3a;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+}
+
 div.profile-icon
 {
   width: 200px;
@@ -30,7 +80,7 @@ div.profile-icon
   border-radius: 5px;
   background-color: #777;
   position: absolute;
-  z-index: 5;
+  z-index: 300;
   margin-top: -100px;
   margin-left: 50px;
   -webkit-transition: 0.25s ease;
@@ -80,7 +130,7 @@ span.icon-edit
   right: 7px;
   border-radius: 10px;
   display: none;
-  opacity: 0.4;
+  opacity: 0.75;
 }
 
 span.icon-edit img
@@ -116,7 +166,7 @@ span.icon-info
   left: 5px;
   border-radius: 10px;
   display: none;
-  opacity: 0.4;
+  opacity: 0.75;
 }
 
 span.icon-info img
@@ -167,7 +217,6 @@ div.profile-items a:hover
 div.profile-content
 {
   height: auto;
-  padding-bottom: 25px !important;
   width: 100%;
 }
 
@@ -175,11 +224,14 @@ div.gallery-title
 {
   font-size: 3.2em;
   color: white;
-  height: 75px;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+  height: 100px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   text-align: center;
   line-height: 75px;
+  position: relative;
+  z-index: 5;
+  background-color: #222;
 }
 
 div.profile-content div.row
@@ -346,6 +398,9 @@ div.profile-desc
   width: 100%;
   height: auto;
   background-color: #333;
+  position: relative;
+  z-index: 4;
+  border-top: 3px solid #faaf3a;
 }
 
 div.profile-desc div.row
@@ -413,11 +468,13 @@ div.social-item
   font-size: 1.1em;
   -webkit-transition: 0.2s ease;
   -webkit-transition-property: background-color;
+  border-radius: 10px;
 }
 
 div.social-item:hover
 {
   background-color: #faaf3a;
+  cursor: pointer;
 }
 
 div.social-header
@@ -461,7 +518,7 @@ div.icon-infobox
   width: 800px;
   height: 540px;
   position: fixed;
-  z-index: 910;
+  z-index: 1201;
   left: calc(50% - 400px);
   top: calc(50% - 270px);
   border-radius: 20px;
@@ -573,7 +630,7 @@ div.icon-large img
 
   div.gallery-title
   {
-    line-height: 65px;
+    line-height: 75px;
   }
 
   span.fa-displayname
@@ -691,7 +748,8 @@ div.icon-large img
 
   div.watcher-name
   {
-    width: 33.333333%;
+    width: 25%;
+    font-size: 0.8em;
   }
 
   div.profile-social
@@ -780,7 +838,7 @@ div.icon-large img
 {
   div.profile-header
   {
-    height: 150px;
+    height: 130px;
   }
   div.upper-desc
   {

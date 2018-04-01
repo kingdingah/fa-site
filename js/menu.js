@@ -191,14 +191,11 @@ $(document).ready(function()
       }
     });
 
-    $(window).scroll(function() {
-      if($(window).scrollTop() > 290)
+    $(window).resize(function() {
+      if($(window).width() > 990)
       {
-          /* */
-      }
-      else
-      {
-        /* */
+        $("div.mobile-menu").hide();
+        $("span.burger-box").hide();
       }
     });
 

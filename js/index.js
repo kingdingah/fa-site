@@ -52,6 +52,12 @@ $(document).ready(function() {
     $("div.notes-container").fadeOut(600);
   }, 5000);
 
+  $(window).resize(function() {
+    if($(window).width() < 990)
+    {
+      $("div.new-note").hide();
+    }
+  });
 
   $("div.notes-container .close-icon-info").click(function() {
     $("div.new-note").fadeOut(200);
