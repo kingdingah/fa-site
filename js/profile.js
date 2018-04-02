@@ -33,6 +33,10 @@ $(document).ready(function()
             'margin-top': '-250px'
           });
 
+          $('div.profile-desc').css({
+            'margin-top':'50px'
+          });
+
           $("div.profile-name-small").fadeIn(200);
         }
         else
@@ -48,6 +52,10 @@ $(document).ready(function()
 
           $("div.profile-icon").css({
             'margin-top': '-100px'
+          });
+
+          $('div.profile-desc').css({
+            'margin-top':'0px'
           });
 
           $("div.profile-name-small").fadeOut(200);
@@ -70,6 +78,10 @@ $(document).ready(function()
             'margin-top': '-250px'
           });
 
+          $('div.profile-desc').css({
+            'margin-top':'50px'
+          });
+
           $("div.profile-name-small").fadeIn(200);
         }
         else
@@ -83,8 +95,12 @@ $(document).ready(function()
             'display':'none'
           });
 
+          $('div.profile-desc').css({
+            'margin-top':'0px'
+          });
+
           $("div.profile-icon").css({
-            'margin-top': '-100px'
+            'margin-top': '-75px'
           });
 
           $("div.profile-name-small").fadeOut(200);
@@ -92,20 +108,56 @@ $(document).ready(function()
       }
       else
       {
-        $("div.profile-nav").css({
-          'position':'relative',
-          'top':'auto'
-        });
+        if($(window).scrollTop() >= 130)
+        {
+          $("div.profile-nav").css({
+            'position':'fixed',
+            'top':'50px',
+          });
 
-        $("#mobile-border").css({
-          'display':'none'
-        });
+          $("#mobile-border").css({
+            'display':'none'
+          });
 
-        $("div.profile-icon").css({
-          'margin-top': '-100px'
-        });
+          $("div.profile-name").hide();
 
-        $("div.profile-name-small").fadeOut(200);
+          $("div.profile-icon").css({
+            'margin-top': '-300px'
+          });
+
+          $("div.profile-name-small").css({
+            'margin-left':($(window).width() - 200)/2+"px"
+          });
+
+          $('div.profile-desc').css({
+            'margin-top':'0px'
+          });
+
+          $("div.profile-name-small").fadeIn(200);
+        }
+        else
+        {
+          $("div.profile-nav").css({
+            'position':'relative',
+            'top':'auto'
+          });
+
+          $("#mobile-border").css({
+            'display':'none'
+          });
+
+          $("div.profile-name").fadeIn(200);
+
+          $("div.profile-icon").css({
+            'margin-top': '-75px'
+          });
+
+          $('div.profile-desc').css({
+            'margin-top':'0px'
+          });
+
+          $("div.profile-name-small").fadeOut(200);
+        }
       }
     });
 
@@ -141,6 +193,13 @@ $(document).ready(function()
 
         param = true;
       }
+    });
+
+    $('span.fa-name-small').click(function()
+    {
+      $("html, body").animate({
+        scrollTop:0
+      }, 500);
     });
 
     $(".icon-info").click(function() {

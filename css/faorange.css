@@ -1,0 +1,105 @@
+/* MENU CSS */
+
+#upload:hover
+{
+  background-color: #faaf3a;
+}
+
+div.nav-settings-dropdown h4, div.nav-profile-dropdown h4,
+div.nav-subbox h4
+{
+    border-bottom: 1px solid #faaf3a;
+}
+
+span.submission .sub-overlay
+{
+  background-color: rgba(250, 175, 58, 0.2);
+  color: #faaf3a;
+}
+
+div.nav-upload a:hover
+{
+  background-color: #faaf3a;
+}
+
+#logout
+{
+  border-top: 1px solid #faaf3a;
+  background-color: rgba(250, 175, 58, 0.1);
+}
+
+#logout:hover
+{
+  background-color: rgba(250, 175, 58, 0.2);
+}
+
+div.nav-settings-dropdown a:hover, div.nav-profile-dropdown a:hover,
+div.nav-subbox a:hover
+{
+    color: #faaf3a !important;
+}
+
+
+/* MOBILE MENU */
+
+div.profile-hotbar a
+{
+  border-bottom: 1px solid #faaf3a;
+}
+
+div.notifications-mobile
+{
+  border-bottom: 1px solid #faaf3a;
+}
+
+div.mobile-menu a:active
+{
+  background-color: rgba(250, 175, 58, 0.1);
+}
+
+/* Profile CSS */
+div.watcher-box
+{
+  border-top: 3px solid #faaf3a;
+}
+
+div.banner-overlay
+{
+  background-color: rgb(209, 141, 35);
+}
+
+#mobile-border
+{
+  background-color: #faaf3a;
+}
+
+div.watcher-name:hover
+{
+  color: #faaf3a;
+}
+
+div.profile-desc
+{
+  border-top: 3px solid #faaf3a;
+}
+
+div.social-item:hover
+{
+  background-color: #faaf3a;
+}
+
+@media screen and (max-width: 1200px)
+{
+  div.desc-info
+  {
+    border-bottom: 1px solid #faaf3a;
+  }
+}
+
+@media screen and (max-width: 990px)
+{
+  div.desc-avatar
+  {
+    border-bottom: 1px solid #faaf3a;
+  }
+}

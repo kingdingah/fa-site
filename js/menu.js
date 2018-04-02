@@ -199,4 +199,21 @@ $(document).ready(function()
       }
     });
 
+    var currentcolor = "faorange";
+
+    $("#blue").click(function() {
+      $('link[href="css/' + currentcolor + '.css"]').attr('href','css/fablue.css');
+      currentcolor = "fablue";
+    });
+
+    $("#orng").click(function() {
+      $('link[href="css/' + currentcolor + '.css"]').attr('href','css/faorange.css');
+      currentcolor = "faorange";
+    });
+
+    $("#pink").click(function() {
+      $('link[href="css/' + currentcolor + '.css"]').attr('href','css/fapink.css');
+      currentcolor = "fapink";
+    });
+
 });

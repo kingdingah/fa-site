@@ -10,7 +10,6 @@ div.banner-overlay
   height: 500px;
   position: absolute;
   z-index: 1;
-  background-color: rgb(209, 141, 35);
   opacity: 0.1;
 }
 
@@ -62,11 +61,15 @@ span.fa-name-small
   padding-left: 15px !important;
 }
 
+span.fa-name-small:hover
+{
+  cursor: pointer;
+}
+
 #mobile-border
 {
     height: 3px;
     width: 100%;
-    background-color: #faaf3a;
     display: none;
     position: fixed;
     z-index: 100;
@@ -81,7 +84,7 @@ div.profile-icon
   background-color: #777;
   position: absolute;
   z-index: 300;
-  margin-top: -100px;
+  margin-top: -75px;
   margin-left: 50px;
   -webkit-transition: 0.25s ease;
   -webkit-transition-property: margin-top;
@@ -253,11 +256,6 @@ div.main-avatar img
   margin: 0 auto !important;
 }
 
-div.watcher-box
-{
-  border-top: 3px solid #faaf3a;
-}
-
 div.avatar-title
 {
   width: 100%;
@@ -362,7 +360,6 @@ div.watcher-name:hover
 {
   cursor: pointer;
   background-color: #555;
-  color: #faaf3a;
 }
 
 div.profile-portrait, div.friends-section
@@ -400,7 +397,6 @@ div.profile-desc
   background-color: #333;
   position: relative;
   z-index: 4;
-  border-top: 3px solid #faaf3a;
 }
 
 div.profile-desc div.row
@@ -473,7 +469,6 @@ div.social-item
 
 div.social-item:hover
 {
-  background-color: #faaf3a;
   cursor: pointer;
 }
 
@@ -597,11 +592,6 @@ div.icon-large img
     padding-left: 25px !important;
     padding-right: 25px !important;
   }
-
-  div.desc-info
-  {
-    border-bottom: 1px solid #faaf3a;
-  }
 }
 
 @media screen and (max-width: 990px)
@@ -660,7 +650,7 @@ div.icon-large img
     position: absolute;
     z-index: 5;
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 75px;
     text-align: center;
   }
 
@@ -715,7 +705,6 @@ div.icon-large img
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     padding-bottom: 30px !important;
-    border-bottom: 1px solid #faaf3a;
   }
 
   div.avatar-title
@@ -839,6 +828,11 @@ div.icon-large img
   div.profile-header
   {
     height: 130px;
+  }
+
+  div.profile-icon
+  {
+    margin-top: -75px;
   }
   div.upper-desc
   {

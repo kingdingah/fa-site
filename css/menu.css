@@ -61,7 +61,6 @@ div.nav-settings, div.nav-profile
 
 #upload:hover
 {
-  background-color: #faaf3a;
   cursor: pointer;
 }
 
@@ -163,7 +162,6 @@ div.nav-subbox h4
   height: 40px;
   line-height: 40px;
   font-weight: bold;
-  border-bottom: 1px solid #faaf3a;
   color: white;
   width: calc(100% - 20px);
   font-size: 1em;
@@ -245,7 +243,6 @@ div.nav-settings-dropdown a:hover, div.nav-profile-dropdown a:hover,
 div.nav-subbox a:hover
 {
   background-color: #333;
-  color: #faaf3a !important;
   cursor: pointer;
 }
 
@@ -270,6 +267,35 @@ div.nav-subbox img
   padding-top: 10px !important;
 }
 
+div.theme-blue
+{
+  height: 50px;
+  position: absolute;
+  right: 375px;
+  width: auto;
+  -webkit-transition: 0.2s ease;
+  -webkit-transition-property: background-color, color;
+}
+div.theme-blue a
+{
+  height: 50px;
+  line-height: 50px;
+  font-family: opensans-b;
+  display: block;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-size: 0.9em;
+  color: white !important;
+  text-align: center;
+  width: 100%;
+}
+
+div.theme-blue a:hover
+{
+  background-color: #555;
+  cursor: pointer;
+}
+
 span.submission
 {
   height: 220px;
@@ -284,8 +310,6 @@ span.submission .sub-overlay
   height: 200px;
   width: 100%;
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #faaf3a;
   line-height: 200px;
   text-align: center;
   font-size: 1.5em;
@@ -324,11 +348,6 @@ div.nav-settings a:hover, div.nav-profile a:hover,
 {
   cursor: pointer;
   background-color: #444;
-}
-
-div.nav-upload a:hover
-{
-  background-color: #faaf3a;
 }
 
 span.nav-caret
@@ -411,10 +430,8 @@ div.nav-search input
 
 #logout
 {
-  border-top: 1px solid #faaf3a;
   height: 40px;
   line-height: 40px;
-  background-color: rgba(250, 175, 58, 0.1);
   color: white;
   -webkit-transition: 0.2s ease;
   -webkit-transition-property: background-color, color;
@@ -424,7 +441,6 @@ div.nav-search input
 #logout:hover
 {
   color: white !important;
-  background-color: rgba(250, 175, 58, 0.2);
 }
 
 /* Mobile Responsiveness */
@@ -540,13 +556,11 @@ div.profile-hotbar a
   font-size: 0.85em;
   color: white !important;
   line-height: 35px;
-  border-bottom: 1px solid #faaf3a;
 }
 
 div.notifications-mobile
 {
   height: 40px;
-  border-bottom: 1px solid #faaf3a;
   width: 100%;
   color: white;
   font-size: 1em;
@@ -563,7 +577,6 @@ div.mobile-menu a
 
 div.mobile-menu a:active
 {
-  background-color: rgba(250, 175, 58, 0.1);
   cursor: pointer;
 }
 
