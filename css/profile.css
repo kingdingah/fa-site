@@ -266,11 +266,6 @@ div.avatar-title
   color: white;
 }
 
-div.gallery-section
-{
-  height: 400px;
-}
-
 div.gallery-featured, div.gallery-recent
 {
   height: auto;
@@ -284,10 +279,17 @@ div.gallery-featured
 
 div.gallery-featured .col-md-11, div.gallery-recent .col-md-11
 {
-  height: 500px;
+  height: 600px;
   background-color: #888;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+div.gallery-items div
+{
+  background-color: red;
+  height: 100%;
+  width: 200px;
 }
 
 div.about-section

@@ -119,7 +119,9 @@ $(document).ready(function()
             'display':'none'
           });
 
-          $("div.profile-name").hide();
+          $("div.profile-name").css({
+            'margin-top':'-150px'
+          });
 
           $("div.profile-icon").css({
             'margin-top': '-300px'
@@ -130,7 +132,7 @@ $(document).ready(function()
           });
 
           $('div.profile-desc').css({
-            'margin-top':'0px'
+            'margin-top':'-45px'
           });
 
           $("div.profile-name-small").fadeIn(200);
@@ -146,7 +148,9 @@ $(document).ready(function()
             'display':'none'
           });
 
-          $("div.profile-name").fadeIn(200);
+          $("div.profile-name").css({
+            'margin-top':'75px'
+          });
 
           $("div.profile-icon").css({
             'margin-top': '-75px'
