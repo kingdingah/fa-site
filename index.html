@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/profile.css"/>
+    <link rel="stylesheet" type="text/css" href="css/faorange.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/parallax.min.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+      <h2></h2>
+      <div class="nav-logo-mobile">
+        <span class="logo-box">
+          <img src="img/svg/sitelogo.svg" />
+        </span>
+      </div>
+      <div class="profile-icon-mobile">
+        <img src="img/logo/dingo.png" />
+      </div>
+      <div id="mobile-username">~username</div>
+      <div class="notifications-mobile"></div>
+      <div class="profile-hotbar">
+        <a>Profile</a>
+        <a>Notes</a>
+        <a>Log out</a>
+      </div>
+      <a id="profile-mobile-title">Profile</a>
+      <div id="profile-mobile">
+        <a>Notes</a>
+        <a>Journals</a>
+        <a>Commissions</a>
+        <a>Avatar</a>
+      </div>
+      <a id="site-mobile-title">Site Settings</a>
+      <div id="site-mobile">
+        <a>Account Settings</a>
+        <a>Site Settings</a>
+        <a>Site Settings</a>
+        <a>Edit Profile Info</a>
+        <a>Edit Social Links</a>
+        <a>Avatar Management</a>
+      </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div class="main-menu">
+      <div class="nav-logo">
+        <span class="logo-box">
+          <img src="img/svg/sitelogo.svg" />
+        </span>
+      </div>
+      <div class="mobile-button">
+        <span class="burger-box">
+          <img src="img/svg/burger.svg" />
+        </span>
+      </div>
+      <div class="nav-upload">
+        <a id="upload">
+          Upload
+          <span class="upload-button">
+            <img src="img/svg/upload-button.svg" />
+          </span>
+        </a>
+      </div>
+      <!-- Optional Search Bar
+      <span class="search-icon">
+        <img src="img/svg/search.svg" />
+      </span>
+      <div class="nav-search">
+        <input type="text" />
+      </div>
+      -->
+      <div class="theme-blue">
+        <!--<a id="blue">Blue Theme</a>
+        <a id="orng">Blue Theme</a>-->
+        <a id="pink">Blue Theme</a>
+      </div>
+      <div class="nav-settings">
+        <a id="subbox"></a>
+        <a id="profile">
+          Profile
+          <span class="nav-caret">
+            <img src="img/svg/caret.svg" />
+          </span>
+        </a>
+        <a id="settings">
+          Settings
+          <span class="nav-caret">
+            <img src="img/svg/caret.svg" />
+          </span>
+        </a>
+      </div>
+      <div class="nav-subbox">
+        <h4>Notes</h4>
+        <p class="nothingnew">No New Notes</p>
+        <a class="notes">hi :)<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="notes">Sketch Update<br/>
+          <span class="sentwhen">6hr ago</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <h4>Journals</h4>
+        <p class="nothingnew">No New Journals</p>
+        <a class="journals">Stream Announcement<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Patreon Update<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Raffle!<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="journals">Etc etc..<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <h4>Submissions</h4>
+        <p class="nothingnew">No New Subs</p>
+        <!-- SUBS -->
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub1.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub2.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub3.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+        <!-- /SUBS  -->
+        <a id="clear">Clear</a>
+        <a id="seeall">View All</a>
+      </div>
+      <div class="nav-profile-dropdown">
+        <h4>Profile Info</h4>
+        <a>Notes</a>
+        <a>Journals</a>
+        <a>Commissions</a>
+        <a>Avatar</a>
+        <a id="logout">Log Out</a>
+      </div>
+      <div class="nav-settings-dropdown">
+        <h4>Account</h4>
+        <a>Account Settings</a>
+        <a>Site Settings</a>
+        <a>Site Settings</a>
+        <h4>Profile</h4>
+        <a>Edit Profile Info</a>
+        <a>Edit Social Links</a>
+        <a>Avatar Management</a>
+        <a id="sfw-toggle">SFW Toggle</a>
+      </div>
+    </div>
+
+    <!-- Quick Upload Section -->
+    <div class="quick-upload">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+    </div>
+
+    <!-- Notes Notifications -->
+    <div class="notes-container">
+
+    </div>
+
+    <!-- Fade to Black -->
+    <div class="black-overlay"></div>
+
+    <!-- Icon Infobox-->
+    <div class="icon-infobox container">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+      <div class="row">
+        <div class="col-md-8 icon-display">
+          <div class="icon-large">
+            <img src="img/icon/dingo.png"/>
+          </div>
+        </div>
+        <div class="col-md-4 icon-details"></div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="main container">
+      <div class="profile-header parallax-window" data-parallax="scroll" data-image-src="img/bg/bg.jpg">
+        <div class="banner-overlay"></div>
+        <span class="banner-edit">
+          <img src="img/svg/edit.svg" />
+        </span>
+      </div>
+      <!-- Profile Nav -->
+      <div class="profile-nav">
+        <div class="profile-icon">
+          <span class="icon-edit">
+            <img src="img/svg/edit.svg" />
+          </span>
+          <span class="icon-info">
+            <img src="img/svg/info.svg" />
+          </span>
+          <img src="img/icon/dingo.png"/>
+        </div>
+        <div class="profile-name">
+          <span class="fa-name">~kingdingah</span>
+          <br />
+          <span class="fa-displayname">King of the Dingos</span>
+          <span class="fa-joindate">Joined: August 7th 1996</span>
+        </div>
+        <div class="profile-name-small">
+          <img src="img/icon/dingo.png"/>
+          <span class="fa-name-small">~kingdingah</span>
+        </div>
+        <div class="profile-items">
+          <a>Profile</a>
+          <a>Gallery</a>
+          <a>Scraps</a>
+          <a>Favourites</a>
+          <a>Commissions</a>
+        </div>
+        <div class="profile-info">
+          <a>1460 Followers</a>
+          <a>36 Following</a>
+          <a>176996 Views</a>
+          <a>146 Subs</a>
+          <a>10552 Favs</a>
+        </div>
+      </div>
+      <div id="mobile-border"></div>
+      <div class="profile-desc container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-xl-4 desc-info">
+            <div class="container desc-box">
+              <div class="row">
+                <div class="upper-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="mid-desc">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="lower-desc">
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 col-xl-4 desc-avatar">
+            <div class="avatar-title">Avatar Title</div>
+            <div class="main-avatar">
+              <img src="img/icon/dingo.png"/>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 col-xl-4 desc-social">
+            <div class="profile-social container">
+              <div class="row">
+                <div class="social-header col-md-12">
+                  Social Links
+                </div>
+                <!-- social item -->
+                <div class="social-item col-md-6">
+                  <span class="icon-social">
+                    <img src="img/svg/twitter.svg" />
+                  </span>
+                  <span class="social-user">
+                    kingdingah
+                  </span>
+                </div>
+                <div class="social-item col-md-6">
+                  <span class="icon-social">
+                    <img src="img/svg/tumblr.svg" />
+                  </span>
+                  <span class="social-user">
+                    kingdingah
+                  </span>
+                </div>
+                <div class="social-item col-md-6">
+                  <span class="icon-social">
+                    <img src="img/svg/telegram.svg" />
+                  </span>
+                  <span class="social-user">
+                    dingah
+                  </span>
+                </div>
+                <div class="social-item col-md-6">
+                  <span class="icon-social">
+                    <img src="img/svg/steam.svg" />
+                  </span>
+                  <span class="social-user">
+                    dingah
+                  </span>
+                </div>
+                <div class="social-item col-md-6">
+                  <span class="icon-social">
+                    <img src="img/svg/facebook.svg" />
+                  </span>
+                  <span class="social-user">
+                    none
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="fa-watchers">
+              <div class="watcher-title-box">
+                <a class="watcher-title">Recent Watchers</a>
+                <a class="watcher-count">1460</a>
+              </div>
+              <div class="watcher-box container">
+                <div class="row">
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">goeshere</div>
+                  <div class="watcher-name col-sm-3">yeahdude</div>
+                  <div class="watcher-name col-sm-3">youfeelme</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                </div>
+              </div>
+            </div>
+            <div class="fa-watching">
+              <div class="watcher-title-box">
+                <a class="watcher-title">Recent Watching</a>
+                <a class="watcher-count">38</a>
+              </div>
+              <div class="watcher-box container">
+                <div class="row">
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">goeshere</div>
+                  <div class="watcher-name col-sm-3">yeahdude</div>
+                  <div class="watcher-name col-sm-3">youfeelme</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                  <div class="watcher-name col-sm-3">username</div>
+                  <div class="watcher-name col-sm-3">name</div>
+                  <div class="watcher-name col-sm-3">ofuser</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-content container">
+        <div class="row">
+          <div class="gallery-title col-md-12">Gallery</div>
+          <div class="gallery-featured col-md-3 container">
+            <div class="row">
+              <div class="col-md-11">
+
+              </div>
+            </div>
+          </div>
+          <div class="gallery-recent col-md-9">
+            <div class="row">
+              <div class="col-md-11 gallery-items">
+
+              </div>
+            </div>
+          </div>
+          <div class="gallery-title col-md-12">Shouts</div>
+          <div class="gallery-featured col-md-12 container">
+            <div class="row">
+              <div class="col-md-11">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SITE FOOTER -->
+    <div class="site-footer container">
+      <div class="row">
+        <div class="footer-content col-sm-4">
+          &copy; 2018 FA & Kingo Design - Edit
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="packages/slick/slick.min.js"></script>
+  </body>
+  <script>
+      $("html,body").animate({scrollTop: 0}, 100);
+  </script>
+</html>
