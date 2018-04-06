@@ -106,7 +106,72 @@ $(document).ready(function()
           $("div.profile-name-small").fadeOut(200);
         }
       }
-      else
+      else if($(window).width() <= 990)
+      {
+        if($(window).scrollTop() >= 300)
+        {
+          $("div.profile-nav").css({
+            'position':'fixed',
+            'top':'50px',
+          });
+
+          $("#mobile-border").css({
+            'display':'none'
+          });
+
+          $("div.profile-name").css({
+            'margin-top':'-250px'
+          });
+
+          $("div.desc-info").css({
+            'margin-top':'115px'
+          });
+
+          $("div.profile-items").fadeIn(200);
+
+          $("div.profile-icon").css({
+            'margin-top': '-300px'
+          });
+
+          $('div.profile-desc').css({
+            'margin-top':'-45px'
+          });
+
+          $("div.profile-name-small").fadeIn(200);
+        }
+        else
+        {
+          $("div.profile-nav").css({
+            'position':'relative',
+            'top':'auto'
+          });
+
+          $("#mobile-border").css({
+            'display':'none'
+          });
+
+          $("div.profile-items").fadeOut(200);
+
+          $("div.profile-name").css({
+            'margin-top':'75px'
+          });
+
+          $("div.desc-info").css({
+            'margin-top':'25px'
+          });
+
+          $("div.profile-icon").css({
+            'margin-top': '-75px'
+          });
+
+          $('div.profile-desc').css({
+            'margin-top':'0px'
+          });
+
+          $("div.profile-name-small").fadeOut(200);
+        }
+      }
+      else if($(window).width() <= 768)
       {
         if($(window).scrollTop() >= 130)
         {
@@ -120,7 +185,7 @@ $(document).ready(function()
           });
 
           $("div.profile-name").css({
-            'margin-top':'-150px'
+            'margin-top':'-250px'
           });
 
           $("div.profile-icon").css({
@@ -148,8 +213,8 @@ $(document).ready(function()
             'display':'none'
           });
 
-          $("div.profile-name").css({
-            'margin-top':'75px'
+          $("div.profile-name-small").css({
+            'margin-left':"50px"
           });
 
           $("div.profile-icon").css({

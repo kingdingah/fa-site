@@ -627,4 +627,10 @@ div#site-mobile a, div#profile-mobile a
     top: 10px;
     z-index: 1200;
   }
+
+
+  div.theme-blue
+  {
+    display: none;
+  }
 }

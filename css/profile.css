@@ -72,7 +72,7 @@ span.fa-name-small:hover
     width: 100%;
     display: none;
     position: fixed;
-    z-index: 100;
+    z-index: 99;
     top: 100px;
 }
 
@@ -381,7 +381,7 @@ div.desc-info
 
 div.upper-desc
 {
-  margin-top: 75px;
+  margin-top: 85px;
 }
 
 div.upper-desc, div.mid-desc, div.lower-desc
@@ -659,6 +659,12 @@ div.icon-large img
   div.profile-items
   {
     display: none;
+    font-size: 0.8em;
+  }
+
+  div.profile-items a
+  {
+    padding: 0px 15px !important;
   }
 
   span.social-user
