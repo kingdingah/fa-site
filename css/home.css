@@ -90,3 +90,44 @@ div.home-recent
   height: 450px;
   background-color: #333;
 }
+
+div.menu-profile
+{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  z-index: 11;
+  right: 350px;
+}
+
+div.menu-profile img
+{
+  height:50px;
+  width: auto;
+  border-radius: 0px;
+  margin-top: -4px;
+}
+
+a.fa-name-small
+{
+  font-size: 1em;
+  line-height: 50px;
+  color: white;
+  font-family: opensans-b;
+  padding-left: 15px !important;
+}
+
+a.fa-name-small:hover
+{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 990px)
+{
+  span.move-down
+  {
+    left: calc((100%/2) - 15px);
+  }
+}

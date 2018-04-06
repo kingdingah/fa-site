@@ -458,7 +458,8 @@ div.nav-search input
 {
   span.logo-box
   {
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
   }
 
   div.mobile-button
@@ -624,6 +625,11 @@ div#site-mobile a, div#profile-mobile a
   span.burger-box
   {
      display: block;
+  }
+
+  div.nav-settings
+  {
+    display: none;
   }
 
   div.nav-logo-mobile span.logo-box

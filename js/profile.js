@@ -264,7 +264,7 @@ $(document).ready(function()
       }
     });
 
-    $('span.fa-name-small').click(function()
+    $('div.profile-name-small span.fa-name-small').click(function()
     {
       $("html, body").animate({
         scrollTop:0
