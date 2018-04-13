@@ -11,6 +11,7 @@ div.main-menu
   background-color: #111;
   position: fixed;
   z-index: 100;
+  margin-top: -50px;
 }
 
 div.menu-bg
@@ -108,7 +109,7 @@ div.nav-profile-dropdown
   height: auto;
   position: absolute;
   top: 50px;
-  right: 135px;
+  right: 143px;
   background-color: #111;
   display: none;
   border-radius: 0px 0px 10px 10px;
@@ -122,7 +123,7 @@ div.nav-subbox
   overflow-y: scroll;
   position: absolute;
   top: 50px;
-  right: 145px;
+  right: 163px;
   z-index: 999;
   background-color: #111;
   display: none;
@@ -225,7 +226,7 @@ div.nav-subbox #seeall
   top: 365px;
   text-align: center;
   background-color: #e03a3a;
-  right: 145px;
+  right: 163px;
   border-radius: 0px 0px 10px 0px;
   z-index: 6;
   line-height: 35px;

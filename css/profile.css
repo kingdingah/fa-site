@@ -2,6 +2,7 @@ div.profile-header
 {
   width: 100%;
   height: 500px;
+  margin-top: 50px;
 }
 
 div.banner-overlay
@@ -299,7 +300,7 @@ div.about-section
 
 div.fa-watchers,div.fa-watching
 {
-  height: 160px;
+  height: 163px;
   margin: 25px 25px 0px 25px;
   background-color: #444;
 }
@@ -845,5 +846,13 @@ div.icon-large img
   div.upper-desc
   {
     margin-top: 85px;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  div.profile-items
+  {
+    display: none;
   }
 }

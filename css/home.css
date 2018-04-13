@@ -44,7 +44,7 @@ div.parallax-mirror img
 /* News Section */
 div.home-news
 {
-  width: 100%;
+  width: 200%;
   height: 600px;
   background-color: #555;
   overflow: auto;
@@ -54,20 +54,69 @@ div.home-news
 div.home-news .news-container
 {
   width: auto;
-  height: 530px;
+  height: 600px;
   position: relative;
-  top: 35px !important;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.news-item-container
+{
+  display: inline-block;
+  height: 100%;
 }
 
 div.news-item
 {
-  display: inline-block;
-  width: 300px;
-  height: 100%;
-  margin-right: 10px;
-  margin-left: 10px;
+  height: calc(100% - 30px);
+  width: calc(100% - 50px);
+  margin-top: 15px;
   background-color: #777;
-  float: left;
+  border-radius: 10px;
+}
+
+div.news-item.first-news-item
+{
+  width: calc(100% - 50px);
+}
+
+div.news-item.last-news-item
+{
+  width: calc(100% - 25px);
+}
+
+span.news-next
+{
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  z-index: 100;
+  margin-top: 275px;
+  right: 25px;
+}
+
+span.news-previous
+{
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  z-index: 100;
+  margin-top: 275px;
+  left: 25px;
+}
+
+span.news-next img, span.news-previous img
+{
+  width: 100%;
+  height: auto;
+}
+
+span.news-next:hover , span.news-previous:hover
+{
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 
@@ -122,6 +171,11 @@ a.fa-name-small:hover
   cursor: pointer;
   text-decoration: none;
   color: white;
+}
+
+.home-margin
+{
+  margin-top: 0 !important;
 }
 
 @media screen and (max-width: 990px)

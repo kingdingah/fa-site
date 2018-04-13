@@ -36,7 +36,7 @@ div.nav-subbox::-webkit-scrollbar
 }
 
 ::-webkit-scrollbar {
-    width: 13px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
