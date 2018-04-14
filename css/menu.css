@@ -459,8 +459,8 @@ div.nav-search input
 {
   span.logo-box
   {
-    width: 60%;
-    margin-left: 20%;
+    width: 230px;
+    margin-left: calc(50% - 115px);
   }
 
   div.mobile-button
@@ -519,6 +519,7 @@ div.mobile-menu
   padding-right: 25px !important;
   top: 0;
   left: 0;
+  overflow-y: scroll;
 }
 
 div.profile-icon-mobile
@@ -644,9 +645,14 @@ div#site-mobile a, div#profile-mobile a
     z-index: 1200;
   }
 
-
   div.theme-blue
   {
     display: none;
+  }
+
+  div.nav-logo-mobile span.logo-box
+  {
+    width: 230px;
+    margin-left: calc(50% - 140px);
   }
 }

@@ -13,6 +13,13 @@ $(document).ready(function()
       });
     });
 
+    if($(window).width() < 768)
+    {
+      $("div.profile-name-small").css({
+        'margin-left':($(window).width() - 200)/2+"px"
+      });
+    }
+
     $(window).scroll(function()
     {
 
@@ -196,10 +203,6 @@ $(document).ready(function()
             'margin-top': '-300px'
           });
 
-          $("div.profile-name-small").css({
-            'margin-left':($(window).width() - 200)/2+"px"
-          });
-
           $('div.profile-desc').css({
             'margin-top':'-45px'
           });
@@ -217,8 +220,8 @@ $(document).ready(function()
             'display':'none'
           });
 
-          $("div.profile-name-small").css({
-            'margin-left':"50px"
+          $("div.profile-name").css({
+            'margin-top':'75px'
           });
 
           $("div.profile-icon").css({
