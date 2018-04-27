@@ -10,7 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
     <link rel="stylesheet" type="text/css" href="css/faorange.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css"></link>
+
     <!-- JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -208,7 +211,7 @@
     <!-- Body -->
     <div class="main container">
       <!-- For new users, not logged in-->
-      <div class="home-banner parallax-window" data-parallax="scroll" data-image-src="img/bg/bg2.jpg">
+      <div class="home-banner parallax-window" data-parallax="scroll" data-image-src="img/bg/paw2.png">
         <div class="banner-overlay"></div>
         <span class="move-down">
           <img src="img/svg/caret.svg"/>
@@ -218,43 +221,19 @@
       <!-- For current users, logged in -->
       <div class="home-welcome">Welcome back, kingo!</div>
       <div class="home-featured">
-
+        <iframe src="https://discordapp.com/widget?id=189129616210919424&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
       </div>
       <div class="home-news">
-        <span id="prev" class="news-previous">
-          <img src="img/svg/prev.svg"/>
-        </span>
-        <span id="next" class="news-next">
-          <img src="img/svg/next.svg"/>
-        </span>
-        <div class="news-bg-overlay"></div>
-        <div class="news-bg parallax-window" data-parallax="scroll" data-image-src="img/bg/bg3.jpg"></div>
-        <div class="news-container">
-          <div class="news-title">News</div>
-          <div class="news-item-container">
-            <div class="news-item first-news-item"></div>
-          </div>
-          <div class="news-item-container">
-            <div class="news-item"></div>
-          </div>
-          <div class="news-item-container">
-            <div class="news-item"></div>
-          </div>
-          <div class="news-item-container">
-            <div class="news-item"></div>
-          </div>
-          <div class="news-item-container">
-            <div class="news-item"></div>
-          </div>
-          <div class="news-item-container">
-            <div class="news-item"></div>
-          </div>
-          <div class="news-item-container">
-            <div class="news-item"></div>
-          </div>
-          <div class="news-item-container">
-            <div class="news-item last-news-item"></div>
-          </div>
+        <!--<div class="news-bg-overlay"></div>-->
+        <div class="news-bg parallax-window" data-parallax="scroll" data-image-src="img/bg/paw2.png"></div>
+        <div class="owl-carousel">
+          <div class="item" style="width:250px"><h4>1</h4></div>
+          <div class="item" style="width:100px"><h4>2</h4></div>
+          <div class="item" style="width:500px"><h4>3</h4></div>
+          <div class="item" style="width:100px"><h4>4</h4></div>
+          <div class="item" style="width:50px"><h4>6</h4></div>
+          <div class="item" style="width:250px"><h4>7</h4></div>
+          <div class="item" style="width:120px"><h4>8</h4></div>
         </div>
       </div>
       <div class="home-recent">
@@ -275,4 +254,5 @@
   <script>
       $("html,body").animate({scrollTop: 0}, 100);
   </script>
+  <script src="packages/owlcarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
 </html>

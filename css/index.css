@@ -34,7 +34,7 @@ div.nav-subbox::-webkit-scrollbar
 {
   display: none;
 }
-
+/*
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -50,7 +50,7 @@ div.nav-subbox::-webkit-scrollbar
 ::-webkit-scrollbar-thumb:hover {
     background: #444;
 }
-
+*/
 div.main
 {
   width: 100%;

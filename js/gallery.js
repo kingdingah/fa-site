@@ -1,27 +1,21 @@
-var ROOT_Gallery = "http://localhost:4006/fa-site/api/gallery";
-var currentGallery;
-
 $(document).ready(function()
 {
-  getGallery();
+  $('.owl-carousel').owlCarousel({
+      loop: true,
+      center: true,
+      margin:10,
+      nav:true,
+      autoWidth:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+  })
 });
-
-var getGallery = function()
-{
-    console.log('getGallery');
-    $.ajax({
-        type: 'GET',
-        url: ROOT_Gallery,
-        dataType: "json",
-        success: renderGallery
-    });
-};
-
-function renderGallery(data)
-{
-    list = data.gallery;
-    $.each(list, function(index, gallery)
-    {
-        $('').append('<div id="gid' + gallery.g_id +'" class="gallery-item"><img src="" /><div>');
-    });
-}

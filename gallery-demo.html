@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+    <link rel="stylesheet" type="text/css" href="css/faorange.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
+
+    <!-- JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/parallax.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+      <h2></h2>
+      <div class="nav-logo-mobile">
+        <a href="index.html">
+          <span class="logo-box">
+            <img src="img/svg/sitelogo.svg" />
+          </span>
+        </a>
+      </div>
+      <div class="profile-icon-mobile">
+        <img src="img/logo/dingo.png" />
+      </div>
+      <div id="mobile-username">~username</div>
+      <div class="notifications-mobile"></div>
+      <div class="profile-hotbar">
+        <a href="profile.html">Profile</a>
+        <a>Notes</a>
+        <a>Log out</a>
+      </div>
+      <a id="profile-mobile-title">Profile</a>
+      <div id="profile-mobile">
+        <a>Notes</a>
+        <a>Journals</a>
+        <a>Commissions</a>
+        <a>Avatar</a>
+      </div>
+      <a id="site-mobile-title">Site Settings</a>
+      <div id="site-mobile">
+        <a>Account Settings</a>
+        <a>Site Settings</a>
+        <a>Site Settings</a>
+        <a>Edit Profile Info</a>
+        <a>Edit Social Links</a>
+        <a>Avatar Management</a>
+      </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div class="main-menu home-margin">
+      <div class="nav-logo">
+        <a href="index.html">
+          <span class="logo-box">
+            <img src="img/svg/sitelogo.svg" />
+          </span>
+        </a>
+      </div>
+      <div class="mobile-button">
+        <span class="burger-box">
+          <img src="img/svg/burger.svg" />
+        </span>
+      </div>
+      <div class="nav-upload">
+        <a id="upload">
+          Upload
+          <span class="upload-button">
+            <img src="img/svg/upload-button.svg" />
+          </span>
+        </a>
+      </div>
+      <!-- Optional Search Bar
+      <span class="search-icon">
+        <img src="img/svg/search.svg" />
+      </span>
+      <div class="nav-search">
+        <input type="text" />
+      </div>
+      -->
+      <div class="menu-profile">
+        <img src="img/icon/dingo.png"/>
+        <a href="profile.html" class="fa-name-small">~kingdingah</a>
+      </div>
+      <div class="nav-settings">
+        <a id="subbox"></a>
+        <a id="profile">
+          Profile
+          <span class="nav-caret">
+            <img src="img/svg/caret.svg" />
+          </span>
+        </a>
+        <a id="settings">
+          Settings
+          <span class="nav-caret">
+            <img src="img/svg/caret.svg" />
+          </span>
+        </a>
+      </div>
+      <div class="nav-subbox">
+        <h4>Notes</h4>
+        <p class="nothingnew">No New Notes</p>
+        <a class="notes">hi :)<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="notes">Sketch Update<br/>
+          <span class="sentwhen">6hr ago</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <h4>Journals</h4>
+        <p class="nothingnew">No New Journals</p>
+        <a class="journals">Stream Announcement<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Patreon Update<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Raffle!<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="journals">Etc etc..<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <h4>Submissions</h4>
+        <p class="nothingnew">No New Subs</p>
+        <!-- SUBS -->
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub1.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub2.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub3.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+        <!-- /SUBS  -->
+        <a id="clear">Clear</a>
+        <a id="seeall">View All</a>
+      </div>
+      <div class="nav-profile-dropdown">
+        <h4>Profile Info</h4>
+        <a>Notes</a>
+        <a>Journals</a>
+        <a>Commissions</a>
+        <a>Avatar</a>
+        <a id="logout">Log Out</a>
+      </div>
+      <div class="nav-settings-dropdown">
+        <h4>Account</h4>
+        <a>Account Settings</a>
+        <a>Site Settings</a>
+        <a>Site Settings</a>
+        <h4>Profile</h4>
+        <a>Edit Profile Info</a>
+        <a>Edit Social Links</a>
+        <a>Avatar Management</a>
+        <a id="sfw-toggle">SFW Toggle</a>
+      </div>
+    </div>
+    <div class="menu-bg"></div>
+
+    <!-- Quick Upload Section -->
+    <div class="quick-upload">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+    </div>
+
+    <!-- Notes Notifications -->
+    <div class="notes-container">
+
+    </div>
+
+    <!-- Fade to Black -->
+    <div class="black-overlay"></div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="img/demo/demo1.png" class="img-fluid"/></div>
+            <div class="item"><img src="img/demo/demo2.png" class="img-fluid"/></div>
+            <div class="item"><img src="img/demo/demo3.png" class="img-fluid"/></div>
+            <div class="item"><img src="img/demo/demo4.png" class="img-fluid"/></div>
+            <div class="item"><img src="img/demo/demo5.png" class="img-fluid"/></div>
+        </div>
+
+    <!-- SITE FOOTER -->
+    <div class="site-footer container">
+      <div class="row">
+        <div class="footer-content col-sm-4">
+          &copy; 2018 FA & Kingo Design - Edit
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="packages/slick/slick.min.js"></script>
+    <script src="packages/owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="packages/owlcarousel/dist/owl.carousel.js"></script>
+  </body>
+  <script>
+      $("html,body").animate({scrollTop: 0}, 100);
+  </script>
+</html>

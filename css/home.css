@@ -45,9 +45,7 @@ div.parallax-mirror img
 div.home-news
 {
   width: 200%;
-  height: 660px;
-  overflow: auto;
-  white-space: nowrap;
+  height: 500px;
 }
 
 div.news-title
@@ -65,7 +63,7 @@ div.news-title
 div.news-bg-overlay
 {
   width: 100%;
-  height: 660px;
+  height: 500px;
   background-color: #faaf3a;
   opacity: 0.6;
   position: absolute;
@@ -75,7 +73,7 @@ div.news-bg-overlay
 div.news-bg
 {
   width: 100%;
-  height: 660px;
+  height: 500px;
   position: absolute;
   z-index: 40;
   opacity: 0.45;
@@ -91,20 +89,18 @@ div.news-bg img
 
 div.home-news .news-container
 {
-  width: auto;
-  height: 660px;
-  position: relative;
-  z-index: 99;
+  width: 100%;
+  height: 500px;
   padding-top: 25px !important;
   padding-bottom: 25px !important;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 div.news-item-container
 {
   display: inline-block;
-  height: 90%;
+  height: 350px;
+  margin-top: 25px;
+  border-left: 1px solid #333;
 }
 
 div.news-item
@@ -112,7 +108,6 @@ div.news-item
   height: calc(100% - 30px);
   width: calc(100% - 50px);
   margin-top: 15px;
-  background-color: rgba(0,0,0,0.65);
   border-radius: 10px;
 }
 
@@ -132,8 +127,9 @@ span.news-next
   width: 35px;
   position: absolute;
   z-index: 100;
-  margin-top: 335px;
+  margin-top: 265px;
   right: 25px;
+  display: none;
 }
 
 span.news-previous
@@ -142,8 +138,9 @@ span.news-previous
   width: 35px;
   position: absolute;
   z-index: 100;
-  margin-top: 335px;
+  margin-top: 265px;
   left: 25px;
+  display: none;
 }
 
 span.news-next img, span.news-previous img
@@ -223,4 +220,10 @@ a.fa-name-small:hover
   {
     left: calc((100%/2) - 15px);
   }
+}
+
+.owl-carousel .item
+{
+  height: 300px;
+  background-color: white;
 }
