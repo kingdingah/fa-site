@@ -282,4 +282,28 @@ $(document).ready(function()
       $(".icon-infobox").fadeIn(300);
       $(".black-overlay").fadeIn(300);
     });
+
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        autoplay:true,
+        loop: true,
+        margin: 50,
+        autoplaySpeed: 750,
+        autoplayTimeout: 3000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
+    $(".item, .item2").css({
+      'width': $("div.shouts-box").width() - 40
+    });
 });

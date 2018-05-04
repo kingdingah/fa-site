@@ -4,6 +4,8 @@ $(document).ready(function()
       loop: true,
       center: true,
       margin:10,
+      autoplay:true,
+      autoplayTimeout: 3000,
       nav:true,
       autoWidth:true,
       responsive:{

@@ -236,6 +236,7 @@ div.gallery-title
   position: relative;
   z-index: 5;
   background-color: #222;
+  border-bottom: 3px solid #faaf3a;
 }
 
 div.profile-content div.row
@@ -555,6 +556,461 @@ div.icon-large img
 {
   width: 100%;
   height: 100%;
+}
+
+/* Shouts */
+
+div.shouts-box
+{
+  height: auto;
+  margin: 0 auto !important;
+}
+
+div.shouts-box .col-md-7, div.shouts-box .col-md-4
+{
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+span.shout-prev
+{
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  -webkit-transition: 0.2s ease;
+}
+
+span.shout-next
+{
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  -webkit-transition: 0.2s ease;
+}
+
+span.shout-left:hover, span.shout-right:hover
+{
+  background-color: rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+span.shout-left img
+{
+  height: 20px;
+  margin-top: 135px;
+  margin-left: 15px;
+  width: auto;
+}
+
+span.shout-right img
+{
+  height: 20px;
+  margin-top: 135px;
+  margin-left: 15px;
+  width: auto;
+}
+
+div.shouts-title
+{
+  font-size: 3.2em;
+  color: white;
+  height: 100px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-align: center;
+  line-height: 75px;
+  position: relative;
+  z-index: 5;
+  background-color: #222;
+  border-bottom: 3px solid #faaf3a;
+}
+
+div.shout-head
+{
+  font-size: 1.2em;
+  color: white;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #222;
+  border-bottom: 3px solid #faaf3a;
+  border-radius: 6px 6px 0px 0px;
+}
+
+div.shout-text
+{
+  font-size: 1em;
+  color: white;
+  height: 200px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #444;
+}
+
+div.shout-text textarea
+{
+  width: 92%;
+  margin-top: 13px;
+  height: 174px;
+  background-color: #222;
+  border: none;
+  outline: none;
+  color: #f7f7f7;
+  resize: none;
+  border-radius: 6px;
+  font-size: 17px !important;
+  padding: 0px 10px !important;
+}
+
+div.shout-btns
+{
+  height: 50px;
+  background-color: #333;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.shout-send
+{
+  height: 50px;
+  width: 100%;
+  font-size: 1.2em;
+  color: white;
+  background-color: #333;
+  position: absolute;
+  right: 0;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.2s ease;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.shout-send:hover
+{
+  background-color: #555;
+  cursor: pointer;
+}
+
+.shout-send:active
+{
+  background-color: #faaf3a;
+  cursor: pointer;
+}
+
+/* Shout Carousel */
+
+div.shouts-box .col-md-7
+{
+  height: 300px;
+  width: 50%;
+  border-radius: 6px;
+}
+
+div.owl-carousel, .owl-stage, .owl-item
+{
+  max-width: none !important;
+}
+
+div.shout-left
+{
+  width: 160px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  border-right: 3px solid #faaf3a;
+  border-radius: 6px 0px 0px 6px;
+}
+
+div.shout-right
+{
+  width: calc(100% - 160px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  background-color: #444;
+  border-radius: 0px 6px 6px 0px;
+}
+
+span.shout-icon
+{
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  background-color: #888;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+span.shout-icon img
+{
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+div.shout-name-box
+{
+  position: absolute;
+  top: 145px;
+  left: 0;
+  height: 100px;
+  width: 100%;
+}
+
+div.shout-name
+{
+  font-size: 1.2em;
+  text-align: center;
+  font-family: opensans-b;
+  line-height: 35px;
+  color: white;
+  height: 35px;
+  width: 100%;
+}
+
+div.shout-about
+{
+  font-size: 0.9em;
+  text-align: center;
+  color: white;
+  opacity: 0.65;
+  line-height: 25px;
+  height: 25px;
+  width: 100%;
+}
+
+div.shout-content
+{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 120px;
+  width: calc(100% - 60px);
+  font-size: 1.4em;
+  background-color: #252525;
+  padding: 8px 15px !important;
+  color: white;
+  border-radius: 0px 6px 6px 6px;
+}
+
+.container-lip
+{
+  height: 25px;
+  width: 25px;
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+.container-lip img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.remove-shout
+{
+  height: 15px;
+  width: 15px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0.2;
+  -webkit-transition: 0.15s ease;
+}
+
+.remove-shout:hover
+{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.remove-shout img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.item
+{
+  height: 300px !important;
+  border-radius: 6px 6px 0px 0px;
+}
+
+/* Mini Shout */
+
+div.mini-shout
+{
+  height: 130px;
+  margin: 10px 0px;
+  border-radius: 6px;
+}
+
+div.mini-left
+{
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  background-color: #222;
+  border-radius: 6px 0px 0px 6px;
+  border-right: 3px solid #faaf3a;
+}
+
+div.mini-right
+{
+  width: calc(100% - 130px);
+  position: absolute;
+  height: 130px;
+  left: 130px;
+  background-color: #444;
+  border-radius: 0px 6px 6px 0px;
+}
+
+div.mini-left .shout-icon
+{
+  width: 130px;
+  left: 0;
+  top: 0;
+  height: 130px;
+  border-radius: 6px 0px 0px 6px;
+}
+
+div.mini-left .shout-icon img
+{
+  border-radius: 6px 0px 0px 6px;
+  height: 130px;
+  width: 130px;
+}
+
+div.mini-right .shout-name
+{
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  padding-left: 15px !important;
+  line-height: 40px;
+  font-style: 1.4em;
+  background-color: #333;
+  border-radius: 0px 6px 0px 0px;
+}
+
+.shout-when
+{
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  color: #777;
+  font-size: 14px !important;
+}
+
+div.mini-right .shout-content
+{
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  font-size: 1.4em;
+  background-color: #444;
+  padding: 8px 15px !important;
+  color: white;
+  border-radius: 0px;
+  border-radius: 0px 0px 6px 0px;
+}
+
+/* Micro Shout */
+
+/* Mini Shout */
+
+div.micro-shout
+{
+  height: 140px;
+  margin: 10px 0px;
+  border-radius: 6px;
+}
+
+div.micro-left
+{
+  width: 160px;
+  height: 140px;
+  position: absolute;
+  border-radius: 6px 0px 0px 6px;
+}
+
+div.micro-right
+{
+  width: calc(100% - 160px);
+  position: absolute;
+  height: 140px;
+  left: 160px;
+  background-color: #444;
+  border-radius: 6px;
+}
+
+div.micro-left .shout-icon
+{
+  width: 130px;
+  top: 5px;
+  border-radius: 50%;
+  left: 10px;
+  height: 130px;
+}
+
+div.micro-left .shout-icon img
+{
+  border-radius: 50%;
+}
+
+div.micro-right .shout-name
+{
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  padding-left: 15px !important;
+  line-height: 40px;
+  font-style: 1.4em;
+  background-color: #333;
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 3px solid #faaf3a;
+}
+
+div.micro-right .container-lip
+{
+  height: 25px;
+  width: 25px;
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+div.micro-right .shout-content
+{
+  width: calc(100% - 45px);
+  height: 75px;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  font-size: 1.1em;
+  background-color: #252525;
+  padding: 8px 15px !important;
+  color: white;
+  border-radius: 0px;
+  border-radius: 0px 6px 6px 6px;
 }
 
 /* MOBILE CONSTRAINTS */

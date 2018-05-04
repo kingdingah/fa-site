@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="css/profile.css"/>
     <link rel="stylesheet" type="text/css" href="css/faorange.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
+
     <!-- JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -397,11 +400,102 @@
               </div>
             </div>
           </div>
-          <div class="gallery-title col-md-12">Shouts</div>
-          <div class="gallery-featured col-md-12 container">
+          <div class="shouts-title col-md-12">Shouts</div>
+          <div class="shouts-box col-md-12 container parallax-window" data-parallax="scroll" data-image-src="img/bg/bg4.jpg">
             <div class="row">
-              <div class="col-md-11">
+              <!--
+              <span class="shout-prev"><img src="img/svg/prev.svg"/></span>
+              <span class="shout-next"><img src="img/svg/next.svg"/></span>
+            -->
+              <div class="col-md-7 owl-carousel owl-theme">
 
+                <div class="item">
+                  <div class="shout-left">
+                    <span class="shout-icon"><img src="img/icon/dingo.png"/></span>
+                    <div class="shout-name-box">
+                      <div class="shout-name">~kingdingah</div>
+                      <div class="shout-about">Sent: May 3rd 2018</div>
+                    </div>
+                  </div>
+                  <div class="shout-right">
+                    <span class="container-lip"><img src="img/svg/lip.svg"/></span>
+                    <div class="shout-content">
+                      <span class="remove-shout">
+                        <img src="img/svg/cancel.svg" />
+                      </span>
+                      Thanks for the favourite!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+
+                  <div class="mini-shout">
+                    <div class="mini-left">
+                      <span class="shout-icon"><img src="img/icon/dingo.png"/></span>
+                    </div>
+                    <div class="mini-right">
+                      <div class="shout-name">~kingdingah <span class="shout-when">Sent: May 4th 2018</span></div>
+                      <div class="shout-content">
+                        Thanks for the favourite!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mini-shout">
+                    <div class="mini-left">
+                      <span class="shout-icon"><img src="img/icon/dingo.png"/></span>
+                    </div>
+                    <div class="mini-right">
+                      <div class="shout-name">~kingdingah <span class="shout-when">Sent: May 4th 2018</span></div>
+                      <div class="shout-content">
+                        Thanks for the favourite!
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="item">
+
+                  <div class="micro-shout">
+                    <div class="micro-left">
+                      <span class="shout-icon"><img src="img/icon/dingo.png"/></span>
+                    </div>
+                    <div class="micro-right">
+                      <span class="container-lip"><img src="img/svg/lip.svg"/></span>
+                      <div class="shout-name">~kingdingah <span class="shout-when">Sent: May 4th 2018</span></div>
+                      <div class="shout-content">
+                        Thanks for the favourite!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="micro-shout">
+                    <div class="micro-left">
+                      <span class="shout-icon"><img src="img/icon/dingo.png"/></span>
+                    </div>
+                    <div class="micro-right">
+                      <span class="container-lip"><img src="img/svg/lip.svg"/></span>
+                      <div class="shout-name">~kingdingah <span class="shout-when">Sent: May 4th 2018</span></div>
+                      <div class="shout-content">
+                        Thanks for the favourite!
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+              </div>
+              <div class="col-md-4">
+                <div class="shout-head col-xs-12">Send A Message to Kingo</div>
+                <div class="shout-text col-xs-12">
+                  <textarea type="textarea" placeholder="Shout text goes here.." cols="30" rows="5" wrap="physical"></textarea>
+                </div>
+                <div class="shout-btns col-xs-12">
+                  <input class="shout-send col-xs-12" type="button" value="Send"/>
+                </div>
               </div>
             </div>
           </div>
@@ -418,6 +512,8 @@
       </div>
     </div>
     <script type="text/javascript" src="packages/slick/slick.min.js"></script>
+    <script src="packages/owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="packages/owlcarousel/dist/owl.carousel.js"></script>
   </body>
   <script>
       $("html,body").animate({scrollTop: 0}, 100);
