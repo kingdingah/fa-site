@@ -40,9 +40,9 @@ div.profile-header-container
   background-color: #222;
 }
 
-div.profile-header-container .inner,
-div.profile-nav-container .inner,
-div.profile-desc-container .inner
+div.profile-header-container > .inner,
+div.profile-nav-container > .inner,
+div.profile-desc-container > .inner
 {
   width: 70%;
   position: relative;
@@ -126,12 +126,20 @@ div.profile-desc-container .inner
   height: 100%;
   float: right;
   background: #191919;
+  position: relative;
+}
+
+.profile-user-details .inner
+{
+  width: 50%;
+  height: 250px;
+  float: left;
 }
 
 .profile-user-details .user-general
 {
-  width: 40%;
-  height: 250px;
+  width: 100%;
+  height: 100px;
   float: left;
   padding: 10px !important;
 }
@@ -166,30 +174,28 @@ div.profile-desc-container .inner
   width: 100%;
   font-size: 16px;
   color: white;
-  padding: 7.5px 15px !important;
+  padding: 0px 15px 7.5px 15px !important;
   display: block;
   float: left;
 }
 
 .profile-user-details .user-stats
 {
-  width: 60%;
-  height: 220px;
-  margin-top: 15px;
-  float: right;
+  width: 100%;
+  height: 150px;
+  float: left;
   padding: 0 20px !important;
-  border-left: 1px solid #111;
 }
 
 .profile-user-details .user-stats > span
 {
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 30px;
+  line-height: 30px;
   text-align: left;
   display: block;
   color: #faaf3a;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .profile-user-details .user-stats > table
@@ -201,7 +207,7 @@ div.profile-desc-container .inner
 {
   font-weight: bold;
   color: white;
-  height: 30px;
+  height: 24px;
   width: 35%;
   font-size: 14px;
 }
@@ -209,9 +215,52 @@ div.profile-desc-container .inner
 .profile-user-details .user-stats > table td
 {
   color: white;
-  height: 30px;
+  height: 24px;
   width: 15%;
   font-size: 14px;
+}
+
+.profile-user-details .user-favourites > span
+{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+  display: block;
+  color: #faaf3a;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.profile-user-details .user-favourites > table
+{
+  width: 100%;
+}
+
+.profile-user-details .user-favourites > table th
+{
+  font-weight: bold;
+  color: white;
+  height: 24px;
+  width: 40%;
+  font-size: 14px;
+}
+
+.profile-user-details .user-favourites > table td
+{
+  color: white;
+  height: 24px;
+  width: 60%;
+  font-size: 14px;
+}
+
+.profile-user-details .user-favourites > table tr:first-child th
+{
+  width: 35%;
+}
+.profile-user-details .user-favourites > table tr:first-child td
+{
+  width: 15%;
 }
 
 .inner > .section-title
