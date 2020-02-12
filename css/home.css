@@ -11,6 +11,21 @@ div.banner-overlay
   opacity: 0.3;
 }
 
+div.home-logged
+{
+  min-height: 700px;
+  min-width: 100%;
+  height: 700px;
+  width: 100%;
+}
+
+div.home-logged div.user-banner
+{
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+
 span.move-down
 {
   height: 35px;
@@ -31,9 +46,10 @@ span.move-down img
 
 div.home-featured
 {
-  width: 100%;
-  height: 600px;
-  background-color: #333;
+  width: 33.333%;
+  float: left;
+  height: calc(650px);
+  background-color: #222;
 }
 
 div.parallax-mirror img
@@ -44,8 +60,10 @@ div.parallax-mirror img
 /* News Section */
 div.home-news
 {
-  width: 200%;
-  height: 500px;
+  width: 33.333%;
+  float: left;
+  background-color: #272727;
+  height: calc(650px);
 }
 
 div.news-title
@@ -58,33 +76,6 @@ div.news-title
   position: relative;
   text-align: center;
   line-height: 60px;
-}
-
-div.news-bg-overlay
-{
-  width: 100%;
-  height: 500px;
-  background-color: #faaf3a;
-  opacity: 0.6;
-  position: absolute;
-  z-index: 50;
-}
-
-div.news-bg
-{
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  z-index: 40;
-  opacity: 0.45;
-  overflow: hidden;
-}
-
-div.news-bg img
-{
-  width: 100%;
-  height: auto;
-  margin-top: -200px;
 }
 
 div.home-news .news-container
@@ -161,7 +152,7 @@ div.home-welcome
 {
   width: 100%;
   height: 80px;
-  background-color: #444;
+  background-color: #222;
   color: white;
   font-size: 2.5em;
   font-family: opensans-b;
@@ -171,9 +162,10 @@ div.home-welcome
 
 div.home-recent
 {
-  width: 100%;
-  height: 450px;
-  background-color: #333;
+  width: 33.333%;
+  float: left;
+  height: calc(650px);
+  background-color: #222;
 }
 
 div.menu-profile
@@ -212,6 +204,23 @@ a.fa-name-small:hover
 .home-margin
 {
   margin-top: 0 !important;
+}
+
+.tagged-container
+{
+  width: 100%;
+  background: #333;
+}
+
+.tagged-container > div
+{
+  height: 500px;
+  width: 100%;
+}
+
+.tagged-container > div:nth-child(even)
+{
+  background-color: #444;
 }
 
 @media screen and (max-width: 990px)

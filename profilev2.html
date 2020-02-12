@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/profilev2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/faorange.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
+    <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
+
+    <!-- JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/parallax.min.js"></script>
+    <script src="js/profilev2.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+      <h2></h2>
+      <div class="nav-logo-mobile">
+        <a href="index.html">
+          <span class="logo-box">
+            <img src="img/svg/sitelogo.svg" />
+          </span>
+        </a>
+      </div>
+      <div class="profile-icon-mobile">
+        <img src="img/logo/dingo.png" />
+      </div>
+      <div id="mobile-username">~username</div>
+      <div class="notifications-mobile"></div>
+      <div class="profile-hotbar">
+        <a>Profile</a>
+        <a>Notes</a>
+        <a>Log out</a>
+      </div>
+      <a id="profile-mobile-title">Profile</a>
+      <div id="profile-mobile">
+        <a>Notes</a>
+        <a>Journals</a>
+        <a>Commissions</a>
+        <a>Avatar</a>
+      </div>
+      <a id="site-mobile-title">Site Settings</a>
+      <div id="site-mobile">
+        <a>Account Settings</a>
+        <a>Site Settings</a>
+        <a>Site Settings</a>
+        <a>Edit Profile Info</a>
+        <a>Edit Social Links</a>
+        <a>Avatar Management</a>
+      </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div class="main-menu">
+      <div class="nav-logo">
+        <a href="index.html">
+          <span class="logo-box">
+            <img src="img/svg/sitelogo.svg" />
+          </span>
+        </a>
+      </div>
+      <div class="mobile-button">
+        <span class="burger-box">
+          <img src="img/svg/burger.svg" />
+        </span>
+      </div>
+      <div class="nav-upload">
+        <a id="upload">
+          Upload
+          <span class="upload-button">
+            <img src="img/svg/upload-button.svg" />
+          </span>
+        </a>
+      </div>
+      <!--
+      Optional Search Bar
+      <span class="search-icon">
+        <img src="img/svg/search.svg" />
+      </span>
+      <div class="nav-search">
+        <input type="text" />
+      </div>
+      -->
+      <div class="nav-settings">
+        <a id="subbox"></a>
+        <a id="profile">
+          Profile
+          <span class="nav-caret">
+            <img src="img/svg/caret.svg" />
+          </span>
+        </a>
+        <a id="settings">
+          Settings
+          <span class="nav-caret">
+            <img src="img/svg/caret.svg" />
+          </span>
+        </a>
+      </div>
+      <div class="nav-subbox">
+        <h4>Notes</h4>
+        <p class="nothingnew">No New Notes</p>
+        <a class="notes">hi :)<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="notes">Sketch Update<br/>
+          <span class="sentwhen">6hr ago</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <h4>Journals</h4>
+        <p class="nothingnew">No New Journals</p>
+        <a class="journals">Stream Announcement<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Patreon Update<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~artist</span>
+        </a>
+        <a class="journals">Raffle!<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <a class="journals">Etc etc..<br/>
+          <span class="sentwhen">Recently</span>
+          <span class="bywho">~user</span>
+        </a>
+        <h4>Submissions</h4>
+        <p class="nothingnew">No New Subs</p>
+        <!-- SUBS -->
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub1.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub2.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+
+        <span class="submission">
+          <div class="sub-overlay"> View </div>
+          <img src="img/art/sub3.png"/>
+        </span>
+        <h6>Submission Title</h6>
+        <span class="bywho">~artist</span>
+        <!-- /SUBS  -->
+        <a id="clear">Clear</a>
+        <a id="seeall">View All</a>
+      </div>
+      <div class="nav-profile-dropdown">
+        <h4>Profile Info</h4>
+        <a>Notes</a>
+        <a>Journals</a>
+        <a>Commissions</a>
+        <a>Avatar</a>
+        <a id="logout">Log Out</a>
+      </div>
+      <div class="nav-settings-dropdown">
+        <h4>Account</h4>
+        <a>Account Settings</a>
+        <a>Site Settings</a>
+        <a>Site Settings</a>
+        <h4>Profile</h4>
+        <a>Edit Profile Info</a>
+        <a>Edit Social Links</a>
+        <a>Avatar Management</a>
+        <a id="sfw-toggle">SFW Toggle</a>
+      </div>
+    </div>
+
+    <!-- Quick Upload Section -->
+    <div class="quick-upload">
+      <span class="close-icon-info">
+        <img src="img/svg/cancel.svg" />
+      </span>
+    </div>
+
+    <!-- Body -->
+    <div class="main profile-container container">
+      <!-- BACKGROUND -->
+      <div class="profile-custom-background">
+        <img src="img/bg/neu.jpg" />
+      </div>
+
+      <!-- FOREGROUND -->
+      <div class="profile-header-container">
+        <div class="inner">
+          <div class="profile-user-avatar">
+            <img src="img/art/icon.png" />
+          </div>
+          <div class="profile-user-details">
+            <div class="user-general">
+              <span id="username">~dingah</span>
+              <span id="tagline">"CLOSER TO HEAVEN"</span>
+              <span id="created">Joined on: Aug 7th 1996</span>
+            </div>
+            <div class="user-stats">
+              <span>User Stats</span>
+              <table>
+                <tr>
+                  <th>Watchers</th>
+                  <td>2257</td>
+                  <th>Views</th>
+                  <td>32011</td>
+                </tr>
+                <tr>
+                  <th>Watching</th>
+                  <td>34</td>
+                  <th>Submission</th>
+                  <td>166</td>
+                </tr>
+                <tr>
+                  <th>Favourites</th>
+                  <td>21489</td>
+                  <th>Journals</th>
+                  <td>39</td>
+                </tr>
+                <tr>
+                  <th>Comments Earned</th>
+                  <td>21489</td>
+                  <th>Comments Given</th>
+                  <td>39</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-nav-container">
+        <div class="inner">
+          <a class="menu_Select">About</a>
+          <a>Gallery</a>
+          <a>Scraps</a>
+          <a>Favourites</a>
+          <a>Commissions</a>
+          <a>Watchers List</a>
+          <a>Watching List</a>
+        </div>
+      </div>
+      <div class="profile-desc-container">
+        <div class="inner menu_Select">
+          <span class="section-title">About Dingah</span>
+          <div class="desc-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis, augue ut rutrum tempus, felis eros auctor nibh, id hendrerit enim nunc quis leo. Sed sed dolor porttitor, luctus mauris et, suscipit risus. Phasellus tristique leo eu suscipit auctor. Morbi nec rhoncus urna. Sed porttitor velit eget ullamcorper aliquet. Cras vestibulum nisi dolor, vitae tristique massa facilisis in. Donec eget enim nec velit rutrum mattis vitae eu libero. In hac habitasse platea dictumst.
+
+Mauris viverra turpis at dui facilisis, non bibendum justo sodales. Phasellus vel neque vel nisl pulvinar pulvinar. Suspendisse cursus diam non lorem interdum pellentesque. In feugiat sed elit id hendrerit. Nulla pretium est dolor, et accumsan dui pulvinar quis. Sed justo mauris, pretium quis congue sit amet, finibus a odio. Aliquam blandit commodo nulla, sodales blandit nulla molestie ac. Donec vitae justo ex. Aliquam in viverra est. Vestibulum a porttitor urna. Proin metus metus, dignissim at interdum quis, ultrices pulvinar ex. Integer a nibh consequat, commodo lorem ut, eleifend neque. Nullam eu ante a nunc congue pharetra ac at turpis. Proin vel ligula ut dui lacinia egestas a sit amet arcu. Duis scelerisque consectetur dui non egestas.
+          </div>
+        </div>
+      </div>
+      <div class="profile-gallery-container">
+        <div class="inner">
+          <span class="section-title">Gallery</span>
+          <div class="gallery-featured">
+
+          </div>
+          <div class="gallery-recent">
+
+          </div>
+        </div>
+      </div>
+      <div class="profile-favourites-container">
+        <div class="inner">
+
+        </div>
+      </div>
+      <div class="profile-shouts-container">
+        <div class="inner">
+
+        </div>
+      </div>
+
+      <!-- SITE FOOTER -->
+      <div class="site-footer container">
+
+      </div>
+    </div>
+    <script type="text/javascript" src="packages/slick/slick.min.js"></script>
+    <script src="packages/owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="packages/owlcarousel/dist/owl.carousel.js"></script>
+  </body>
+  <script>
+      $("html,body").animate({scrollTop: 0}, 100);
+  </script>
+</html>

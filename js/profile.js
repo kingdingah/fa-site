@@ -306,4 +306,17 @@ $(document).ready(function()
     $(".item, .item2").css({
       'width': $("div.shouts-box").width() - 40
     });
+
+    $("#profile-tab").click(function(event) {
+      $("html, body").animate({
+        scrollTop:275
+      }, 400);
+    });
+
+    $("#gallery-tab").click(function(event) {
+      var galh = $(".gallery-title");
+      $("html, body").animate({
+        scrollTop:(galh.offset().top) - 100
+      }, 500);
+    });
 });

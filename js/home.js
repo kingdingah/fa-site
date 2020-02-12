@@ -14,31 +14,38 @@ $(document).ready(function()
     }, 750);
   });
 
-  $("div.main-menu").hover(function()
+  if(document.querySelector('.home-logged') !== null)
   {
-    $("div.menu-bg").fadeIn(100);
-  },
-  function()
+    $("div.menu-bg").show();
+  }
+  else
   {
-    $("div.menu-bg").fadeOut(100);
-    $("div.nav-profile-dropdown").fadeOut(100);
-    $("div.nav-settings-dropdown").fadeOut(100);
-    $("div.nav-subbox").fadeOut(100);
-  });
-
-  $(window).scroll(function()
-  {
-
-    if($(window).scrollTop() >= ($(window).height() - 100))
+    $("div.main-menu").hover(function()
     {
-      $("div.menu-bg").fadeIn(200);
-    }
-    else
+      $("div.menu-bg").fadeIn(100);
+    },
+    function()
     {
-      $("div.menu-bg").fadeOut(200);
-    }
+      $("div.menu-bg").fadeOut(100);
+      $("div.nav-profile-dropdown").fadeOut(100);
+      $("div.nav-settings-dropdown").fadeOut(100);
+      $("div.nav-subbox").fadeOut(100);
+    });
 
-  });
+    $(window).scroll(function()
+    {
+
+      if($(window).scrollTop() >= ($(window).height() - 100))
+      {
+        $("div.menu-bg").fadeIn(200);
+      }
+      else
+      {
+        $("div.menu-bg").fadeOut(200);
+      }
+
+    });
+  }
 
   $(".owl-carousel").owlCarousel({
     navigation:true,

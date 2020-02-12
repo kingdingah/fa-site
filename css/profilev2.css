@@ -1,0 +1,264 @@
+html, body
+{
+  background-color: #222;
+}
+
+div.profile-container
+{
+  z-index: 1;
+  position: absolute;
+}
+
+div.profile-custom-background
+{
+  width: 100%;
+  height: 410px;
+  background-color: #e08a04;
+  z-index: 0;
+  position: absolute;
+  overflow-y: hidden;
+
+}
+
+div.profile-custom-background img
+{
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  mix-blend-mode: soft-light;
+}
+
+div.profile-header-container
+{
+  width: 100%;
+  height: 250px;
+  margin-top: 70px;
+  background-color: #222;
+}
+
+div.profile-header-container .inner,
+div.profile-nav-container .inner,
+div.profile-desc-container .inner
+{
+  width: 70%;
+  position: relative;
+  margin: 0 15%;
+  height: 250px;
+}
+
+div.profile-nav-container .inner{height: 50px;}
+div.profile-desc-container .inner{height: auto; padding-bottom: 20px !important;}
+
+div.profile-nav-container
+{
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 20px 0;
+}
+
+div.profile-nav-container .inner
+{
+  background-color: #353535;
+  padding-left: 25px !important;
+}
+
+div.profile-nav-container .inner > a
+{
+  height: 50px;
+  display: block;
+  float: left;
+  line-height: 50px;
+  padding: 0 20px !important;
+  margin-left: 1px !important;
+  color: white;
+  transition: 0.15s ease;
+}
+
+div.profile-nav-container .inner > a:hover
+{
+  cursor: pointer;
+  color: white;
+  border-bottom: 5px solid #faaf3a;
+}
+
+a.menu_Select
+{
+  border-bottom: 5px solid #faaf3a;
+}
+
+div.menu_Select
+{
+  border-left: 5px solid #faaf3a;
+}
+
+div.profile-desc-container
+{
+  width: 100%;
+  height: auto;
+  margin: 40px 0 20px 0;
+}
+
+div.profile-desc-container .inner
+{
+  background-color: #353535;
+}
+
+.profile-user-avatar
+{
+  height: 100%;
+  width: 250px;
+  float: left;
+}
+
+.profile-user-avatar img
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.profile-user-details
+{
+  width: calc(100% - 250px);
+  height: 100%;
+  float: right;
+  background: #191919;
+}
+
+.profile-user-details .user-general
+{
+  width: 40%;
+  height: 250px;
+  float: left;
+  padding: 10px !important;
+}
+
+.profile-user-details .user-general #username
+{
+  width: 150px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 35px;
+  color: #faaf3a;
+  padding: 0 15px !important;
+  display: block;
+  float: left;
+}
+
+.profile-user-details .user-general #tagline
+{
+  height: 55px;
+  line-height: 59px;
+  width: calc(100% - 150px);
+  font-size: 16px;
+  color: white;
+  padding: 0 15px !important;
+  display: block;
+  float: left;
+  opacity: 0.65;
+}
+
+.profile-user-details .user-general #created
+{
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  padding: 7.5px 15px !important;
+  display: block;
+  float: left;
+}
+
+.profile-user-details .user-stats
+{
+  width: 60%;
+  height: 220px;
+  margin-top: 15px;
+  float: right;
+  padding: 0 20px !important;
+  border-left: 1px solid #111;
+}
+
+.profile-user-details .user-stats > span
+{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+  display: block;
+  color: #faaf3a;
+  font-size: 26px;
+}
+
+.profile-user-details .user-stats > table
+{
+  width: 100%;
+}
+
+.profile-user-details .user-stats > table th
+{
+  font-weight: bold;
+  color: white;
+  height: 30px;
+  width: 35%;
+  font-size: 14px;
+}
+
+.profile-user-details .user-stats > table td
+{
+  color: white;
+  height: 30px;
+  width: 15%;
+  font-size: 14px;
+}
+
+.inner > .section-title
+{
+  padding: 10px 25px 5px 25px !important;
+  color: #faaf3a;
+  font-size: 35px;
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+}
+
+.profile-desc-container .inner .desc-body
+{
+  padding: 5px 25px 10px 25px !important;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  text-align: justify;
+}
+
+.profile-gallery-container
+{
+  width: 100%;
+  height: 400px;
+  margin: 20px 0 20px 0;
+}
+
+.profile-gallery-container .inner
+{
+  background-color: #191919;
+  width: 70%;
+  position: relative;
+  margin: 0 15%;
+  height: 400px;
+}
+
+.profile-gallery-container .inner .gallery-featured
+{
+  width: 35%;
+  height: calc(100% - 65px);
+  float: left;
+}
+
+.profile-gallery-container .inner .gallery-recent
+{
+  width: 65%;
+  height: calc(100% - 65px);
+  float: left;
+}
