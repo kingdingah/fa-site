@@ -10,15 +10,19 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
     <link rel="stylesheet" type="text/css" href="css/profilev2.css"/>
     <link rel="stylesheet" type="text/css" href="css/faorange.css"/>
+
+    <!-- CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
     <link rel="stylesheet" type="text/css" href="packages/owlcarousel/dist/assets/owl.carousel.css"></link>
 
-    <!-- JS -->
+    <!-- JS CDN -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+    <!-- JS LOCAL -->
     <script src="js/parallax.min.js"></script>
     <script src="js/profilev2.js"></script>
     <script src="js/menu.js"></script>
@@ -208,45 +212,17 @@
         <div class="inner">
           <div class="profile-user-avatar">
             <img src="img/art/icon.png" />
+            <div>
+              <span>~</span>dingah
+            </div>
           </div>
           <div class="profile-user-details">
             <div class="inner">
               <div class="user-general">
-                <span id="username">~dingah</span>
-                <span id="tagline">"CLOSER TO HEAVEN"</span>
-                <span id="created">Joined on: Aug 7th 1996</span>
-              </div>
-              <div class="user-stats">
-                <span>User Stats</span>
-                <table>
-                  <tr>
-                    <th>Watchers</th>
-                    <td>2257</td>
-                    <th>Views</th>
-                    <td>32011</td>
-                  </tr>
-                  <tr>
-                    <th>Watching</th>
-                    <td>34</td>
-                    <th>Submission</th>
-                    <td>166</td>
-                  </tr>
-                  <tr>
-                    <th>Favourites</th>
-                    <td>21489</td>
-                    <th>Journals</th>
-                    <td>39</td>
-                  </tr>
-                  <tr>
-                    <th>Comments Earned</th>
-                    <td>21489</td>
-                    <th>Comments Given</th>
-                    <td>39</td>
-                  </tr>
-                </table>
+
               </div>
             </div>
-            <div class="user-favourites inner">
+            <div class="user-other inner">
               <span>Other Info</span>
               <table>
                 <tr>
@@ -273,23 +249,30 @@
                 </tr>
               </table>
             </div>
+            <div class="user-stats">
+              <a>Watchers<span>2257</span></a>
+              <a>Watching<span>34</span></a>
+              <a>Views<span>32011</span></a>
+              <a>Submissions<span>166</span></a>
+              <a>Favourites<span>21489</span></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="profile-nav-container">
         <div class="inner">
-          <a class="menu_Select">About</a>
-          <a>Gallery</a>
+          <a>About</a>
+          <a class="menu_Select">Gallery</a>
           <a>Scraps</a>
           <a>Favourites</a>
           <a>Commissions</a>
-          <a>Watchers List</a>
-          <a>Watching List</a>
+          <a>Contact</a>
         </div>
       </div>
+      <!-- SECTIONS -->
+      <span class="section-title">Dingah's Gallery</span>
       <div class="profile-desc-container">
         <div class="inner menu_Select">
-          <span class="section-title">About Dingah</span>
           <div class="desc-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis, augue ut rutrum tempus, felis eros auctor nibh, id hendrerit enim nunc quis leo. Sed sed dolor porttitor, luctus mauris et, suscipit risus. Phasellus tristique leo eu suscipit auctor. Morbi nec rhoncus urna. Sed porttitor velit eget ullamcorper aliquet. Cras vestibulum nisi dolor, vitae tristique massa facilisis in. Donec eget enim nec velit rutrum mattis vitae eu libero. In hac habitasse platea dictumst.
 
@@ -299,12 +282,22 @@ Mauris viverra turpis at dui facilisis, non bibendum justo sodales. Phasellus ve
       </div>
       <div class="profile-gallery-container">
         <div class="inner">
-          <span class="section-title">Gallery</span>
           <div class="gallery-featured">
-
+            <img src="img/art/example.png" />
+            <div>
+              <a>Breezy Out</a>
+              <span>by <a>Reroro</a></span>
+            </div>
           </div>
           <div class="gallery-recent">
-
+            <div><img src="img/art/gallery1.jpg" /></div>
+            <div><img src="img/art/gallery2.png" /></div>
+            <div><img src="img/art/gallery3.jpg" /></div>
+            <div><img src="img/art/gallery4.png" /></div>
+            <div><img src="img/art/gallery5.jpg" /></div>
+            <div><img src="img/art/gallery6.jpg" /></div>
+            <div><img src="img/art/gallery7.jpg" /></div>
+            <div><img src="img/art/gallery8.jpg" /></div>
           </div>
         </div>
       </div>
